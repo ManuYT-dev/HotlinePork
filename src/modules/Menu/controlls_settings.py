@@ -37,8 +37,6 @@ class ControllsMenu:
         scroll_speed (int): The speed at which the menu scrolls.        
         reset_rect (pygame.Rect): The rectangle for the reset button.
         confirm_reset (bool): A flag indicating whether the user is confirming the reset.
-        save_rect (pygame.Rect): The rectangle for the save button.
-        confirm_save (bool): A flag indicating whether the user is confirming the save.
     
     Methods:
         update_keybinds(): Updates the keybinds dictionary with the new keybinds.
@@ -55,7 +53,10 @@ class ControllsMenu:
                  keybinds: dict,
                  surface: pygame.Surface,
                  default_keybinds: dict = DEFAULT_KEYS,
-                 saving_file_path: str = changeable_values.DEFAULT_PATH + r"/assets/saved_datas/controlls.json"):        
+                 saving_file_path=None):
+        if saving_file_path is None:
+            saving_file_path = changeable_values.SAVE_PATH + r"/assets/saved_datas/controlls.json"
+            
         self.font = pygame.font.SysFont(None, 28)
         self.big_font = pygame.font.SysFont(None, 48)
         self.screen_height = surface.get_height()

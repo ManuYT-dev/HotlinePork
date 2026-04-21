@@ -233,7 +233,7 @@ class ENDLESS:
             font (pygame.font.Font): The font for drawing text.
             entity_init (function): A function to initialize the entities.
         """
-        self.stat_saver = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/player_stats.json")
+        self.stat_saver = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/player_stats.json")
         self.screen = changeable_values.SCREEN
         self.map = TileMap(changeable_values.DEFAULT_PATH + r"/assets/maps/endless/map_endless.csv",
                   changeable_values.DEFAULT_PATH + r"/assets/maps/endless/Floors.png",

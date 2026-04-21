@@ -3,8 +3,7 @@ from modules.General.types import InputType
 from modules.General.functions import SaveData
 from modules.General.globals import changeable_values
 
-controlls_data = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/controlls.json")
-
+controlls_data = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/controlls.json")
 MOUSE_BUTTONS = {"LEFT": [InputType.MOUSE, pygame.BUTTON_LEFT],
                 "MIDDLE": [InputType.MOUSE, pygame.BUTTON_MIDDLE],
                 "RIGHT": [InputType.MOUSE, pygame.BUTTON_RIGHT]}

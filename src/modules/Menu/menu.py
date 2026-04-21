@@ -149,12 +149,11 @@ def check_achievements(input_dict: dict):
 
 class MainMenuApp:
     def __init__(self):
-        self.savedata_achievements = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/Achievements.json")
+        self.savedata_achievements = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/Achievements.json")
+        self.savedate_statistics = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/player_stats.json")
+        self.savedata_sound = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/sound.json")
         ACHIEVEMENTS.all_achievements = self.savedata_achievements.load() if self.savedata_achievements.load() != {} else ACHIEVEMENTS.all_achievements
-        
-        self.savedate_statistics = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/player_stats.json")
 
-        self.savedata_sound = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/sound.json")
         changeable_values.GENERAL_VOLUME = self.savedata_sound.load()["GENERAL"] if self.savedata_sound.load() != {}  else changeable_values.GENERAL_VOLUME
         changeable_values.MUSIC_VOLUME = self.savedata_sound.load()["MUSIC"] if self.savedata_sound.load() != {}  else changeable_values.MUSIC_VOLUME
         changeable_values.SFX_VOLUME = self.savedata_sound.load()["SFX"] if self.savedata_sound.load() != {}  else changeable_values.SFX_VOLUME

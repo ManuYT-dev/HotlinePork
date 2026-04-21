@@ -8,6 +8,7 @@ SCREEN_SIZE: tuple[int, int] = (1200, int(1200 * SCREEN_STRETCH[0] / SCREEN_STRE
 class changeable_values:
     PLAYER_SPEED: float = 1
     DEFAULT_PATH: str = ""
+    SAVE_PATH: str = ""
     SCREEN: pygame.Surface = None
     GENERAL_VOLUME: int = 1
     SFX_VOLUME: int = 1

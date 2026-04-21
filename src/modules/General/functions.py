@@ -369,6 +369,7 @@ class SaveData:
         Returns:
             None
         """
+        os.makedirs(os.path.dirname(self.filename), exist_ok=True)
         data = self.data
         with open(self.filename, 'w') as file:
             json.dump(data, file, indent=4)

@@ -12,7 +12,7 @@ class SettingsMenu:
                  screen: pygame.Surface):
         self.screen = screen
         self.keybinds = keybinds
-        self.load_stats = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/player_stats.json")
+        self.load_stats = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/player_stats.json")
         PLAYER_STATS.player_stats = self.load_stats.load() if self.load_stats.load() != {} else PLAYER_STATS.player_stats
         self.keybind_menu = ControllsMenu(self.keybinds, self.screen)
         self.keybind_button = Button(text="Keybinds", center_x=self.screen.get_width() // 2, center_y=150, width=400, height=120, callback=self.keybind_menu.run)

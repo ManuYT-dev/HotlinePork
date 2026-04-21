@@ -100,7 +100,7 @@ class SoundMenu:
     def __init__(self,
                  screen: pygame.Surface,
                  audio_settings: dict[str, int] = {"GENERAL": 1, "SFX": 1, "MUSIC": 1, "DIALOG": 1}):
-        self.saver = SaveData(changeable_values.DEFAULT_PATH + r"/assets/saved_datas/sound.json")
+        self.saver = SaveData(changeable_values.SAVE_PATH + r"/assets/saved_datas/sound.json")
         self.settings = self.saver.data if self.saver.data != {} else audio_settings
         for key, value in self.settings.items():
             self.settings[key] = int(value * 100)
