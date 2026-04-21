@@ -1,0 +1,30 @@
+{
+    "Wrong Number?": [
+        "Complete 10 Waves",
+        false
+    ],
+    "Hog of War": [
+        "Complete 50 Waves",
+        false
+    ],
+    "Pigs Fly Now": [
+        "Complete 100 Waves",
+        false
+    ],
+    "Tim Cheese Will Remember That": [
+        "Finish the Tutorial",
+        true
+    ],
+    "Slice to Meet You": [
+        "Kill 25 Tim Cheeses",
+        false
+    ],
+    "Grate Expectations": [
+        "Kill 50 Tim Cheeses",
+        false
+    ],
+    "I am Truly worried about your Mental Health": [
+        "Kill 100 Tim Cheeses",
+        false
+    ]
+}

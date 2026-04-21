@@ -1,0 +1,70 @@
+\doxysection{src.\+modules.\+Levels.\+endless Namespace Reference}
+\hypertarget{namespacesrc_1_1modules_1_1_levels_1_1endless}{}\label{namespacesrc_1_1modules_1_1_levels_1_1endless}\index{src.modules.Levels.endless@{src.modules.Levels.endless}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_difficulty___chooser}{Difficulty\+\_\+\+Chooser}}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s}{ENDLESS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesrc_1_1modules_1_1_levels_1_1endless_a1ddf8da97c356a3292ca629dd9e20e1c}{draw\+\_\+text}} (str text, pygame.\+font.\+Font font, pygame.\+Surface screen, tuple\mbox{[}int, int\mbox{]} pos\+\_\+left=None, tuple\mbox{[}int, int\mbox{]} pos\+\_\+right=None)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1modules_1_1_levels_1_1endless_a526f1fa513163b360cfb4e6e0c72ef9d}{compute\+\_\+path}} (args)
+\item 
+\mbox{\hyperlink{namespacesrc_1_1modules_1_1_levels_1_1endless_acba876b16c962d0b4fd6baf8ab85cf71}{show\+\_\+survival\+\_\+stats}} (survived\+\_\+waves, time\+\_\+alive)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesrc_1_1modules_1_1_levels_1_1endless_a526f1fa513163b360cfb4e6e0c72ef9d}\index{src.modules.Levels.endless@{src.modules.Levels.endless}!compute\_path@{compute\_path}}
+\index{compute\_path@{compute\_path}!src.modules.Levels.endless@{src.modules.Levels.endless}}
+\doxysubsubsection{\texorpdfstring{compute\_path()}{compute\_path()}}
+{\footnotesize\ttfamily \label{namespacesrc_1_1modules_1_1_levels_1_1endless_a526f1fa513163b360cfb4e6e0c72ef9d} 
+src.\+modules.\+Levels.\+endless.\+compute\+\_\+path (\begin{DoxyParamCaption}\item[{}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Computes the shortest path from the given start position to the target rectangle
+avoiding the given walls using A* pathfinding.
+
+Args:
+    args (tuple): A tuple containing the start position, target rectangle, walls, grid size, buffer
+        and maximum distance.
+
+Returns:
+    list[pygame.Vector2]: A list of positions representing the shortest path from the start position
+        to the target rectangle.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1modules_1_1_levels_1_1endless_a1ddf8da97c356a3292ca629dd9e20e1c}\index{src.modules.Levels.endless@{src.modules.Levels.endless}!draw\_text@{draw\_text}}
+\index{draw\_text@{draw\_text}!src.modules.Levels.endless@{src.modules.Levels.endless}}
+\doxysubsubsection{\texorpdfstring{draw\_text()}{draw\_text()}}
+{\footnotesize\ttfamily \label{namespacesrc_1_1modules_1_1_levels_1_1endless_a1ddf8da97c356a3292ca629dd9e20e1c} 
+src.\+modules.\+Levels.\+endless.\+draw\+\_\+text (\begin{DoxyParamCaption}\item[{str}]{text}{, }\item[{pygame.\+font.\+Font}]{font}{, }\item[{pygame.\+Surface}]{screen}{, }\item[{tuple\mbox{[}int, int\mbox{]} }]{pos\+\_\+left}{ = {\ttfamily None}, }\item[{tuple\mbox{[}int, int\mbox{]} }]{pos\+\_\+right}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a given text string onto a given screen at the specified position.
+
+Args:
+    text (str): The text to be drawn.
+    font (pygame.font.Font): The font to use for the text.
+    screen (pygame.Surface): The screen to draw the text onto.
+    pos_left (tuple[int, int], optional): The top left coordinate of the text. Defaults to None.
+    pos_right (tuple[int, int], optional): The top right coordinate of the text. Defaults to None.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1modules_1_1_levels_1_1endless_acba876b16c962d0b4fd6baf8ab85cf71}\index{src.modules.Levels.endless@{src.modules.Levels.endless}!show\_survival\_stats@{show\_survival\_stats}}
+\index{show\_survival\_stats@{show\_survival\_stats}!src.modules.Levels.endless@{src.modules.Levels.endless}}
+\doxysubsubsection{\texorpdfstring{show\_survival\_stats()}{show\_survival\_stats()}}
+{\footnotesize\ttfamily \label{namespacesrc_1_1modules_1_1_levels_1_1endless_acba876b16c962d0b4fd6baf8ab85cf71} 
+src.\+modules.\+Levels.\+endless.\+show\+\_\+survival\+\_\+stats (\begin{DoxyParamCaption}\item[{}]{survived\+\_\+waves}{, }\item[{}]{time\+\_\+alive}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Displays the survival statistics on the screen and waits for user input to continue.
+
+This function fills the screen with a black background and renders the survival
+statistics including the number of survived waves and the time alive. It waits
+for the user to press any key or mouse button to continue.
+
+Args:
+    survived_waves (int): The number of waves the player survived.
+    time_alive (float): The amount of time the player stayed alive in seconds.
+\end{DoxyVerb}
+ 

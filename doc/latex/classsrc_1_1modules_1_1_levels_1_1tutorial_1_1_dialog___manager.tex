@@ -1,0 +1,127 @@
+\doxysection{src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager}{}\label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_ada80dd84811ff452a08f6eb788c434f7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pygame.\+Surface surface, pygame.\+font.\+Font font, dict\mbox{[}str, tuple\mbox{[}callable, bool\mbox{]}\mbox{]} text, pygame.\+mixer.\+Sound sound=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a2e66886cd55f155be6c12b73d1bffef8}{show\+\_\+next\+\_\+dialog}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_aadcec905709a1322af0d759c1e951baf}{event}} (self, pygame.\+event.\+Event event)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a217db27d46edf57253b30c7337605161}{draw}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a7f808ea834350292ff6b68834b40c373}{update}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a19e1a6fb30f23976d2941481d2805df8}{dialog\+\_\+box}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_aa119373af6a9ddbf5533a85dcf0beeb4}{dialog\+\_\+data}} = list(text.\+items())
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a3b6e741100bdb60da499b9600c64b65c}{current\+\_\+index}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Manages the display and interaction with dialog boxes in a game.
+
+Attributes:
+    dialog_box (DialogBox): The dialog box object used to display and handle dialog text.
+    dialog_data (list): A list of tuples containing dialog text and its associated task.
+    current_index (int): The index of the current dialog in the dialog_data list.
+
+Methods:
+    show_next_dialog(): Displays the next dialog in the dialog_data list.
+    event(event): Handles events related to the dialog box.
+    draw(): Draws the dialog box if it is active.
+    update(): Updates the dialog box if it is active.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_ada80dd84811ff452a08f6eb788c434f7}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_ada80dd84811ff452a08f6eb788c434f7} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{surface}{, }\item[{pygame.\+font.\+Font}]{font}{, }\item[{dict\mbox{[}str, tuple\mbox{[}callable, bool\mbox{]}\mbox{]}}]{text}{, }\item[{pygame.\+mixer.\+Sound }]{sound}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the Dialog_Manager object.
+
+Args:
+    surface (pygame.Surface): The surface to draw the dialog box on.
+    font (pygame.font.Font): The font to use for the text in the dialog box.
+    text (dict[str, tuple[callable, bool]]): A dictionary where each key is a 
+        dialog text string, and each value is a tuple with a task callable 
+        and a boolean indicating if the dialog is skippable.
+    sound (pygame.mixer.Sound, optional): The sound to play when the dialog 
+        box is shown. Defaults to None.
+
+Attributes:
+    dialog_box (DialogBox): The dialog box object used to display and handle 
+        dialog text.
+    dialog_data (list): A list of tuples containing dialog text and its 
+        associated task.
+    current_index (int): The index of the current dialog in the dialog_data list.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a217db27d46edf57253b30c7337605161}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!draw@{draw}}
+\index{draw@{draw}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a217db27d46edf57253b30c7337605161} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_aadcec905709a1322af0d759c1e951baf}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!event@{event}}
+\index{event@{event}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_aadcec905709a1322af0d759c1e951baf} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+event.\+Event}]{event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a2e66886cd55f155be6c12b73d1bffef8}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!show\_next\_dialog@{show\_next\_dialog}}
+\index{show\_next\_dialog@{show\_next\_dialog}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{show\_next\_dialog()}{show\_next\_dialog()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a2e66886cd55f155be6c12b73d1bffef8} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+show\+\_\+next\+\_\+dialog (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a7f808ea834350292ff6b68834b40c373}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!update@{update}}
+\index{update@{update}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a7f808ea834350292ff6b68834b40c373} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a3b6e741100bdb60da499b9600c64b65c}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!current\_index@{current\_index}}
+\index{current\_index@{current\_index}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{current\_index}{current\_index}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a3b6e741100bdb60da499b9600c64b65c} 
+int src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+current\+\_\+index = -\/1}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a19e1a6fb30f23976d2941481d2805df8}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!dialog\_box@{dialog\_box}}
+\index{dialog\_box@{dialog\_box}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{dialog\_box}{dialog\_box}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_a19e1a6fb30f23976d2941481d2805df8} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+dialog\+\_\+box}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ DialogBox(surface=surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ font=font,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sound=sound)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_aa119373af6a9ddbf5533a85dcf0beeb4}\index{src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}!dialog\_data@{dialog\_data}}
+\index{dialog\_data@{dialog\_data}!src.modules.Levels.tutorial.Dialog\_Manager@{src.modules.Levels.tutorial.Dialog\_Manager}}
+\doxysubsubsection{\texorpdfstring{dialog\_data}{dialog\_data}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_dialog___manager_aa119373af6a9ddbf5533a85dcf0beeb4} 
+src.\+modules.\+Levels.\+tutorial.\+Dialog\+\_\+\+Manager.\+dialog\+\_\+data = list(text.\+items())}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Levels/\mbox{\hyperlink{tutorial_8py}{tutorial.\+py}}\end{DoxyCompactItemize}

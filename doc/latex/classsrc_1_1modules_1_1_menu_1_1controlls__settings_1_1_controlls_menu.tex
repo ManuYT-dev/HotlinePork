@@ -1,0 +1,340 @@
+\doxysection{src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu}{}\label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aaf2eb5512894e24ef2cdc49847da9211}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, dict \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a796769b96b1e507de6f3e250e133bcf1}{keybinds}}, pygame.\+Surface surface, dict \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a1c981c5e13f5222d7ea768eb42627f5a}{default\+\_\+keybinds}}=DEFAULT\+\_\+\+KEYS, str saving\+\_\+file\+\_\+path=\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}}+r"{}/assets/saved\+\_\+datas/controlls.\+json"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a87c07b38cbd39f1b430a98b32196e2ac}{get\+\_\+key\+\_\+display}} (self, input\+\_\+pair)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a7bd8e7c504f738d845fe70546cc9a939}{draw}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a791e17e2cbf28a068b0da8b0e7d5b63f}{handle\+\_\+keydown}} (self, event)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a958a12ba71577e878ed872182ad17d45}{handle\+\_\+mouse\+\_\+click}} (self, pos, button)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aed2889afab3924d015bfe7ddea8f4f13}{handle\+\_\+mouse\+\_\+wheel}} (self, y\+\_\+scroll)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a37cc257f39abcba773f2a593619f971d}{ensure\+\_\+visible}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af2fa0342fefe9dd204ed0e806f2705d9}{start\+\_\+rebinding}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a91b6255f2085c1ec7bed2ed5f463102f}{save\+\_\+rebinding}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ab11e18acefad9b8e5ccffa735a4ee16a}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af6b81c4a89c3a0ca4317593f51b56835}{font}} = pygame.\+font.\+Sys\+Font(None, 28)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ae046c43f3836d21c9daa5249b150d0cb}{big\+\_\+font}} = pygame.\+font.\+Sys\+Font(None, 48)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_afad7c44767bc726fb166e21efc8cbc3e}{screen\+\_\+height}} = surface.\+get\+\_\+height()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af28831ecb9b838a46d226d8cf7fc4906}{screen\+\_\+width}} = surface.\+get\+\_\+width()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aa81ff3d244fbb745cb9f793bd0d94153}{screen}} = surface
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a7ad80d5b78e75dba9b5fe15c51803785}{running}} = True
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af1571350290b146a2d2a01b4470f8d32}{saving\+\_\+data}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(saving\+\_\+file\+\_\+path)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a796769b96b1e507de6f3e250e133bcf1}{keybinds}} = keybinds
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a1c981c5e13f5222d7ea768eb42627f5a}{default\+\_\+keybinds}} = default\+\_\+keybinds
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ad916950c0f099a3f5e4e2a311e5e00ae}{actions}} = list(self.\+keybinds.\+keys())
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a427f757aad118382fcc27997307c42c2}{selected\+\_\+index}} = 0
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_adcbcf5bf54414580693201dda7abbcd7}{rebinding}} = False
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a46246102089296051d2856b696beb5da}{rebind\+\_\+step}} = 0
+\item 
+list \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ac3e7d8949bf1a18a03ed4341e4dd49b3}{new\+\_\+keys}} = \mbox{[}None, None\mbox{]}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ada1f7f539f06044f6e0c5a1fedd9206d}{scroll\+\_\+offset}} = 0
+\item 
+list \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af40da79207a4e3e8162bbcc195107d71}{action\+\_\+rects}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a5b73c9ca57acc81f2d30d72c926a1720}{item\+\_\+height}} = 50
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_abee14c29696e489d15d2be9a782a4bcf}{margin}} = 10
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_afb3ca024abaf4609f44375bc2b830264}{visible\+\_\+area}} = self.\+screen\+\_\+height -\/ 100
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a4efb0fdd5124900560300d5b20bec967}{scroll\+\_\+speed}} = 30
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a6a30996ce2da49435d79254694d061ac}{reset\+\_\+rect}} = pygame.\+Rect(self.\+screen\+\_\+width -\/ 110, self.\+screen\+\_\+height -\/ 50, 100, 40)
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a08a958f7d6c73806c287ed52a12d4afc}{confirm\+\_\+reset}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a4227d5345828e983d966637f61988d71}{popup\+\_\+yes}} = yes\+\_\+btn.\+move((self.\+screen\+\_\+width -\/ 400) // 2, (self.\+screen\+\_\+height -\/ 200) // 2)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a551921efb6ed69e280d4f9b5d20f73d9}{popup\+\_\+no}} = no\+\_\+btn.\+move((self.\+screen\+\_\+width -\/ 400) // 2, (self.\+screen\+\_\+height -\/ 200) // 2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class for the controlls menu.
+
+Args:
+    keybinds (dict): A dictionary containing the current keybinds for each action.
+    surface (pygame.Surface): The surface on which the menu is displayed.
+    default_keybinds (dict, optional): A dictionary containing the default keybinds for each action.
+    saving_file_path (str, optional): The path to the file where the keybinds are saved.
+
+Attributes:
+    font (pygame.font.Font): The font used for the menu text.
+    big_font (pygame.font.Font): The font used for the title text.
+    screen_height (int): The height of the screen.
+    screen_width (int): The width of the screen.
+    screen (pygame.Surface): The surface on which the menu is displayed.
+    running (bool): A flag indicating whether the menu is currently running.
+    keybinds (dict): A dictionary containing the current keybinds for each action.
+    default_keybinds (dict): A dictionary containing the default keybinds for each action.
+    actions (list): A list of all the actions in the menu.
+    selected_index (int): The index of the currently selected action.
+    rebinding (bool): A flag indicating whether a key is currently being rebound.
+    rebind_step (int): The step of the key rebinding process.
+    new_keys (list): A list containing the new keys for the currently rebinding action.
+    scroll_offset (int): The offset used for scrolling the menu.        
+    item_height (int): The height of each item in the menu.
+    margin (int): The margin between items in the menu.
+    visible_area (int): The height of the visible area of the menu.
+    scroll_speed (int): The speed at which the menu scrolls.        
+    reset_rect (pygame.Rect): The rectangle for the reset button.
+    confirm_reset (bool): A flag indicating whether the user is confirming the reset.
+    save_rect (pygame.Rect): The rectangle for the save button.
+    confirm_save (bool): A flag indicating whether the user is confirming the save.
+
+Methods:
+    update_keybinds(): Updates the keybinds dictionary with the new keybinds.
+    draw(): Draws the menu on the screen.
+    handle_events(event): Handles user input events.
+    handle_rebind(event): Handles the key rebinding process.
+    handle_keydown(event): Handles key down events.
+    handle_keyup(event): Handles key up events.
+    reset_keybinds(): Resets the keybinds dictionary to the default keybinds.
+    save_keybinds(): Saves the keybinds dictionary to a file.
+    ensure_visible(): Ensures that the currently selected action is visible in the menu.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aaf2eb5512894e24ef2cdc49847da9211}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aaf2eb5512894e24ef2cdc49847da9211} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{keybinds}{, }\item[{pygame.\+Surface}]{surface}{, }\item[{dict }]{default\+\_\+keybinds}{ = {\ttfamily DEFAULT\+\_\+KEYS}, }\item[{str }]{saving\+\_\+file\+\_\+path}{ = {\ttfamily \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}}~+~r"{}/assets/saved\+\_\+datas/controlls.json"{}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a7bd8e7c504f738d845fe70546cc9a939}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!draw@{draw}}
+\index{draw@{draw}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a7bd8e7c504f738d845fe70546cc9a939} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a37cc257f39abcba773f2a593619f971d}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!ensure\_visible@{ensure\_visible}}
+\index{ensure\_visible@{ensure\_visible}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{ensure\_visible()}{ensure\_visible()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a37cc257f39abcba773f2a593619f971d} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+ensure\+\_\+visible (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a87c07b38cbd39f1b430a98b32196e2ac}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!get\_key\_display@{get\_key\_display}}
+\index{get\_key\_display@{get\_key\_display}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{get\_key\_display()}{get\_key\_display()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a87c07b38cbd39f1b430a98b32196e2ac} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+get\+\_\+key\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{input\+\_\+pair}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a791e17e2cbf28a068b0da8b0e7d5b63f}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!handle\_keydown@{handle\_keydown}}
+\index{handle\_keydown@{handle\_keydown}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{handle\_keydown()}{handle\_keydown()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a791e17e2cbf28a068b0da8b0e7d5b63f} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+handle\+\_\+keydown (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a958a12ba71577e878ed872182ad17d45}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!handle\_mouse\_click@{handle\_mouse\_click}}
+\index{handle\_mouse\_click@{handle\_mouse\_click}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse\_click()}{handle\_mouse\_click()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a958a12ba71577e878ed872182ad17d45} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+handle\+\_\+mouse\+\_\+click (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pos}{, }\item[{}]{button}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aed2889afab3924d015bfe7ddea8f4f13}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!handle\_mouse\_wheel@{handle\_mouse\_wheel}}
+\index{handle\_mouse\_wheel@{handle\_mouse\_wheel}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse\_wheel()}{handle\_mouse\_wheel()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aed2889afab3924d015bfe7ddea8f4f13} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+handle\+\_\+mouse\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{y\+\_\+scroll}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ab11e18acefad9b8e5ccffa735a4ee16a}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!run@{run}}
+\index{run@{run}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ab11e18acefad9b8e5ccffa735a4ee16a} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a91b6255f2085c1ec7bed2ed5f463102f}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!save\_rebinding@{save\_rebinding}}
+\index{save\_rebinding@{save\_rebinding}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{save\_rebinding()}{save\_rebinding()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a91b6255f2085c1ec7bed2ed5f463102f} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+save\+\_\+rebinding (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af2fa0342fefe9dd204ed0e806f2705d9}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!start\_rebinding@{start\_rebinding}}
+\index{start\_rebinding@{start\_rebinding}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{start\_rebinding()}{start\_rebinding()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af2fa0342fefe9dd204ed0e806f2705d9} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+start\+\_\+rebinding (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af40da79207a4e3e8162bbcc195107d71}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!action\_rects@{action\_rects}}
+\index{action\_rects@{action\_rects}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{action\_rects}{action\_rects}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af40da79207a4e3e8162bbcc195107d71} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+action\+\_\+rects = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ad916950c0f099a3f5e4e2a311e5e00ae}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!actions@{actions}}
+\index{actions@{actions}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ad916950c0f099a3f5e4e2a311e5e00ae} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+actions = list(self.\+keybinds.\+keys())}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ae046c43f3836d21c9daa5249b150d0cb}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!big\_font@{big\_font}}
+\index{big\_font@{big\_font}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{big\_font}{big\_font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ae046c43f3836d21c9daa5249b150d0cb} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+big\+\_\+font = pygame.\+font.\+Sys\+Font(None, 48)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a08a958f7d6c73806c287ed52a12d4afc}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!confirm\_reset@{confirm\_reset}}
+\index{confirm\_reset@{confirm\_reset}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{confirm\_reset}{confirm\_reset}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a08a958f7d6c73806c287ed52a12d4afc} 
+bool src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+confirm\+\_\+reset = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a1c981c5e13f5222d7ea768eb42627f5a}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!default\_keybinds@{default\_keybinds}}
+\index{default\_keybinds@{default\_keybinds}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{default\_keybinds}{default\_keybinds}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a1c981c5e13f5222d7ea768eb42627f5a} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+default\+\_\+keybinds = default\+\_\+keybinds}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af6b81c4a89c3a0ca4317593f51b56835}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!font@{font}}
+\index{font@{font}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af6b81c4a89c3a0ca4317593f51b56835} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+font = pygame.\+font.\+Sys\+Font(None, 28)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a5b73c9ca57acc81f2d30d72c926a1720}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!item\_height@{item\_height}}
+\index{item\_height@{item\_height}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{item\_height}{item\_height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a5b73c9ca57acc81f2d30d72c926a1720} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+item\+\_\+height = 50}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a796769b96b1e507de6f3e250e133bcf1}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!keybinds@{keybinds}}
+\index{keybinds@{keybinds}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{keybinds}{keybinds}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a796769b96b1e507de6f3e250e133bcf1} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+keybinds = keybinds}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_abee14c29696e489d15d2be9a782a4bcf}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!margin@{margin}}
+\index{margin@{margin}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{margin}{margin}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_abee14c29696e489d15d2be9a782a4bcf} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+margin = 10}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ac3e7d8949bf1a18a03ed4341e4dd49b3}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!new\_keys@{new\_keys}}
+\index{new\_keys@{new\_keys}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{new\_keys}{new\_keys}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ac3e7d8949bf1a18a03ed4341e4dd49b3} 
+list src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+new\+\_\+keys = \mbox{[}None, None\mbox{]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a551921efb6ed69e280d4f9b5d20f73d9}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!popup\_no@{popup\_no}}
+\index{popup\_no@{popup\_no}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{popup\_no}{popup\_no}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a551921efb6ed69e280d4f9b5d20f73d9} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+popup\+\_\+no = no\+\_\+btn.\+move((self.\+screen\+\_\+width -\/ 400) // 2, (self.\+screen\+\_\+height -\/ 200) // 2)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a4227d5345828e983d966637f61988d71}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!popup\_yes@{popup\_yes}}
+\index{popup\_yes@{popup\_yes}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{popup\_yes}{popup\_yes}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a4227d5345828e983d966637f61988d71} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+popup\+\_\+yes = yes\+\_\+btn.\+move((self.\+screen\+\_\+width -\/ 400) // 2, (self.\+screen\+\_\+height -\/ 200) // 2)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a46246102089296051d2856b696beb5da}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!rebind\_step@{rebind\_step}}
+\index{rebind\_step@{rebind\_step}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{rebind\_step}{rebind\_step}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a46246102089296051d2856b696beb5da} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+rebind\+\_\+step = 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_adcbcf5bf54414580693201dda7abbcd7}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!rebinding@{rebinding}}
+\index{rebinding@{rebinding}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{rebinding}{rebinding}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_adcbcf5bf54414580693201dda7abbcd7} 
+bool src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+rebinding = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a6a30996ce2da49435d79254694d061ac}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!reset\_rect@{reset\_rect}}
+\index{reset\_rect@{reset\_rect}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{reset\_rect}{reset\_rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a6a30996ce2da49435d79254694d061ac} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+reset\+\_\+rect = pygame.\+Rect(self.\+screen\+\_\+width -\/ 110, self.\+screen\+\_\+height -\/ 50, 100, 40)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a7ad80d5b78e75dba9b5fe15c51803785}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!running@{running}}
+\index{running@{running}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a7ad80d5b78e75dba9b5fe15c51803785} 
+bool src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+running = True}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af1571350290b146a2d2a01b4470f8d32}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!saving\_data@{saving\_data}}
+\index{saving\_data@{saving\_data}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{saving\_data}{saving\_data}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af1571350290b146a2d2a01b4470f8d32} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+saving\+\_\+data = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(saving\+\_\+file\+\_\+path)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aa81ff3d244fbb745cb9f793bd0d94153}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!screen@{screen}}
+\index{screen@{screen}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_aa81ff3d244fbb745cb9f793bd0d94153} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+screen = surface}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_afad7c44767bc726fb166e21efc8cbc3e}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!screen\_height@{screen\_height}}
+\index{screen\_height@{screen\_height}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{screen\_height}{screen\_height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_afad7c44767bc726fb166e21efc8cbc3e} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+screen\+\_\+height = surface.\+get\+\_\+height()}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af28831ecb9b838a46d226d8cf7fc4906}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!screen\_width@{screen\_width}}
+\index{screen\_width@{screen\_width}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{screen\_width}{screen\_width}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_af28831ecb9b838a46d226d8cf7fc4906} 
+src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+screen\+\_\+width = surface.\+get\+\_\+width()}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ada1f7f539f06044f6e0c5a1fedd9206d}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!scroll\_offset@{scroll\_offset}}
+\index{scroll\_offset@{scroll\_offset}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{scroll\_offset}{scroll\_offset}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_ada1f7f539f06044f6e0c5a1fedd9206d} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+scroll\+\_\+offset = 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a4efb0fdd5124900560300d5b20bec967}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!scroll\_speed@{scroll\_speed}}
+\index{scroll\_speed@{scroll\_speed}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{scroll\_speed}{scroll\_speed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a4efb0fdd5124900560300d5b20bec967} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+scroll\+\_\+speed = 30}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a427f757aad118382fcc27997307c42c2}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!selected\_index@{selected\_index}}
+\index{selected\_index@{selected\_index}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{selected\_index}{selected\_index}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_a427f757aad118382fcc27997307c42c2} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+selected\+\_\+index = 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_afb3ca024abaf4609f44375bc2b830264}\index{src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}!visible\_area@{visible\_area}}
+\index{visible\_area@{visible\_area}!src.modules.Menu.controlls\_settings.ControllsMenu@{src.modules.Menu.controlls\_settings.ControllsMenu}}
+\doxysubsubsection{\texorpdfstring{visible\_area}{visible\_area}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu_afb3ca024abaf4609f44375bc2b830264} 
+int src.\+modules.\+Menu.\+controlls\+\_\+settings.\+Controlls\+Menu.\+visible\+\_\+area = self.\+screen\+\_\+height -\/ 100}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Menu/\mbox{\hyperlink{controlls__settings_8py}{controlls\+\_\+settings.\+py}}\end{DoxyCompactItemize}

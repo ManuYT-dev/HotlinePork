@@ -1,0 +1,359 @@
+\doxysection{src.\+modules.\+Levels.\+tutorial.\+Tutorial Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial}{}\label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a7b2884ffdff0fb3e7357f28c4a742a0b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str default\+\_\+path=\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5fe4bd7654a55562f117a64872260bea}{event}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a490bc8e2af40da3b887ba42ef085cd44}{update}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_adbe1b16fb356d3da72413d7af3f49400}{draw}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a7f308321dbe9a378c7aeddeaf87896f4}{dialog\+\_\+tasks}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aa32f8c553902b9bc12b2cc90693166ac}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a797a927cf99340ed230c898ba430751b}{screen}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_ac8e5096b5671d32b5fb358b1c813f72d}{changeable\+\_\+values.\+SCREEN}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aae45516a43c21ed9bcb12fc620079006}{map}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a8e5d25e80638675abb30bb35709abc8a}{surface}} = self.\+map.\+screen.\+copy()
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a6668b396d254fd354113c8b1016b816d}{allow\+\_\+movement}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aae530495beaa5e135f1a7872548986d2}{blocking}} = self.\+map.\+walls
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a758e9f8adb7ec9f5104f3733850529ad}{camera}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_player}{Player}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5bc028f61e647df838823e875804d909}{player}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a4e973357f4fdb447dde8132059d3bf5c}{enemy1}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ae460e29d762222f423eec41ecf74b232}{enemy2}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec}{enemys}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}(self.\+enemy1, self.\+enemy2)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a603a373990e40398517cecc067575292}{weapon\+\_\+loader}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader}{Weapon\+Loader}}(self.\+surface, self.\+blocking, self.\+enemys)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a00a4f41cdc1ac94d4296af1ee21c31f0}{rocket\+\_\+launcher}} = self.\+weapon\+\_\+loader.\+Rocket\+\_\+\+Launcher()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a6ca179a463d60deaf430cedc52dd334d}{glock}} = self.\+weapon\+\_\+loader.\+Glock()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a2dc99ecb5a6bdf4058a278a5a1ce8c19}{shotgun}} = self.\+weapon\+\_\+loader.\+Shotgun()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ae1676768902f13383997c6af46883c2a}{weapons}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}(self.\+rocket\+\_\+launcher, self.\+glock, self.\+shotgun)
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a3c155884ecdef63ca71675905115b08c}{completed}} = False
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aaddd1d3cd9cdc39d46dbcab55ff67de7}{tutorial\+\_\+an}} = True
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a8ea17e11cad180eee8dbd70e3fefdb5d}{last\+\_\+active\+\_\+dialog}} = pygame.\+time.\+get\+\_\+ticks()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a79b385d975234db735d53a075b191f90}{clock}} = pygame.\+time.\+Clock()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ab278ed40afc051ed73d016914fec2303}{wasd}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_w_a_s_d___pressed}{WASD\+\_\+\+Pressed}}()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a398ed53a2108acb00fa9f2be0a087509}{search\+\_\+weapon}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_pickup___weapon}{Pickup\+\_\+\+Weapon}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5bc028f61e647df838823e875804d909}{player}}=self.\+player)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a643eb8ef69ca428f28b100cf74a93bd4}{search\+\_\+enemies}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_search___enemies}{Search\+\_\+\+Enemies}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec}{enemys}}=self.\+enemys, \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a758e9f8adb7ec9f5104f3733850529ad}{camera}}=self.\+camera)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a81655e733c3bd20cef4a0091d3e97522}{kill\+\_\+enemies}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_kill___all___enemies}{Kill\+\_\+\+All\+\_\+\+Enemies}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec}{enemys}}=self.\+enemys)
+\item 
+dict \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ac2a59d8429b7861e2ac19fdad06725bb}{text}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a3427630e4eaa53e9c54af4898bb25045}{dialog\+\_\+manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The main game class for the tutorial level.
+
+Attributes:
+    screen (pygame.Surface): The main game screen.
+    map (TileMap): The tile map object used for rendering the game world.
+    surface (pygame.Surface): A surface used for rendering the game world.
+    allow_movement (bool): A flag indicating whether player movement is allowed.
+    blocking (list): A list of blocking objects in the game.
+    camera (Camera): The camera object used for scrolling the game world.
+    player (Player): The player object representing the main character.
+    enemy1 (Enemy): The first enemy object in the game.
+    enemy2 (Enemy): The second enemy object in the game.
+
+Methods:
+    __init__(): Initializes the tutorial level.
+    event(event): Handles events related to the tutorial level.
+    update(): Updates the tutorial level.
+    draw(): Draws the tutorial level.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a7b2884ffdff0fb3e7357f28c4a742a0b}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a7b2884ffdff0fb3e7357f28c4a742a0b} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{default\+\_\+path}{ = {\ttfamily \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a7f308321dbe9a378c7aeddeaf87896f4}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!dialog\_tasks@{dialog\_tasks}}
+\index{dialog\_tasks@{dialog\_tasks}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{dialog\_tasks()}{dialog\_tasks()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a7f308321dbe9a378c7aeddeaf87896f4} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+dialog\+\_\+tasks (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_adbe1b16fb356d3da72413d7af3f49400}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!draw@{draw}}
+\index{draw@{draw}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_adbe1b16fb356d3da72413d7af3f49400} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5fe4bd7654a55562f117a64872260bea}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!event@{event}}
+\index{event@{event}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5fe4bd7654a55562f117a64872260bea} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+event (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aa32f8c553902b9bc12b2cc90693166ac}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!run@{run}}
+\index{run@{run}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aa32f8c553902b9bc12b2cc90693166ac} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a490bc8e2af40da3b887ba42ef085cd44}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!update@{update}}
+\index{update@{update}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a490bc8e2af40da3b887ba42ef085cd44} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a6668b396d254fd354113c8b1016b816d}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!allow\_movement@{allow\_movement}}
+\index{allow\_movement@{allow\_movement}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{allow\_movement}{allow\_movement}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a6668b396d254fd354113c8b1016b816d} 
+bool src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+allow\+\_\+movement = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aae530495beaa5e135f1a7872548986d2}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!blocking@{blocking}}
+\index{blocking@{blocking}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{blocking}{blocking}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aae530495beaa5e135f1a7872548986d2} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+blocking = self.\+map.\+walls}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a758e9f8adb7ec9f5104f3733850529ad}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!camera@{camera}}
+\index{camera@{camera}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a758e9f8adb7ec9f5104f3733850529ad} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}} src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+camera}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Camera(main\_screen=self.screen,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ surface=self.surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ width=self.screen.width,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ height=self.screen.height)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a79b385d975234db735d53a075b191f90}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!clock@{clock}}
+\index{clock@{clock}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a79b385d975234db735d53a075b191f90} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+clock = pygame.\+time.\+Clock()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a3c155884ecdef63ca71675905115b08c}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!completed@{completed}}
+\index{completed@{completed}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{completed}{completed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a3c155884ecdef63ca71675905115b08c} 
+bool src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+completed = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a3427630e4eaa53e9c54af4898bb25045}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!dialog\_manager@{dialog\_manager}}
+\index{dialog\_manager@{dialog\_manager}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{dialog\_manager}{dialog\_manager}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a3427630e4eaa53e9c54af4898bb25045} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+dialog\+\_\+manager}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Dialog\_Manager(surface=self.screen,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ font=pygame.font.SysFont(\textcolor{stringliteral}{"{}Arial"{}},\ 24),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ text=self.text,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sound=\_)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a4e973357f4fdb447dde8132059d3bf5c}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!enemy1@{enemy1}}
+\index{enemy1@{enemy1}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{enemy1}{enemy1}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a4e973357f4fdb447dde8132059d3bf5c} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}} src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+enemy1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Enemy(image\_path=default\_path\ +\ \textcolor{stringliteral}{r"{}/assets/entities/gegner.png"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ POSITION=pygame.Vector2(1400,\ 1000),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.blocking,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ main\_target=self.player,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (0,\ 0,\ 255,\ 128),\ 3],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ movement\_speed=0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enemy\_scale=(100,\ 60))}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ae460e29d762222f423eec41ecf74b232}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!enemy2@{enemy2}}
+\index{enemy2@{enemy2}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{enemy2}{enemy2}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ae460e29d762222f423eec41ecf74b232} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}} src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+enemy2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Enemy(image\_path=default\_path\ +\ \textcolor{stringliteral}{r"{}/assets/entities/gegner.png"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ POSITION=pygame.Vector2(800,\ 1000),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.blocking,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ main\_target=self.player,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (0,\ 0,\ 255,\ 128),\ 3],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ movement\_speed=0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enemy\_scale=(100,\ 60))}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!enemys@{enemys}}
+\index{enemys@{enemys}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{enemys}{enemys}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+enemys = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}(self.\+enemy1, self.\+enemy2)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a6ca179a463d60deaf430cedc52dd334d}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!glock@{glock}}
+\index{glock@{glock}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{glock}{glock}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a6ca179a463d60deaf430cedc52dd334d} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+glock = self.\+weapon\+\_\+loader.\+Glock()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a81655e733c3bd20cef4a0091d3e97522}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!kill\_enemies@{kill\_enemies}}
+\index{kill\_enemies@{kill\_enemies}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{kill\_enemies}{kill\_enemies}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a81655e733c3bd20cef4a0091d3e97522} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+kill\+\_\+enemies = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_kill___all___enemies}{Kill\+\_\+\+All\+\_\+\+Enemies}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec}{enemys}}=self.\+enemys)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a8ea17e11cad180eee8dbd70e3fefdb5d}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!last\_active\_dialog@{last\_active\_dialog}}
+\index{last\_active\_dialog@{last\_active\_dialog}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{last\_active\_dialog}{last\_active\_dialog}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a8ea17e11cad180eee8dbd70e3fefdb5d} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+last\+\_\+active\+\_\+dialog = pygame.\+time.\+get\+\_\+ticks()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aae45516a43c21ed9bcb12fc620079006}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!map@{map}}
+\index{map@{map}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aae45516a43c21ed9bcb12fc620079006} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ TileMap(filename=default\_path\ +\ \textcolor{stringliteral}{r"{}/assets/maps/tutorial/map\_tutorial.csv"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ spritesheet=default\_path\ +\ \textcolor{stringliteral}{r"{}/assets/maps/tutorial/Floors.png"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ final\_tile\_size=96)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5bc028f61e647df838823e875804d909}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!player@{player}}
+\index{player@{player}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5bc028f61e647df838823e875804d909} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+player}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Player(image\_path=default\_path\ +\ \textcolor{stringliteral}{r"{}/assets/entities/player.png"{}},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ POSITION=pygame.Vector2(200,\ 200),\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.blocking,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ camera=self.camera,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ speed=10,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (0,\ 0,\ 255),\ 3],\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ player\_scale=(100,\ 70))}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a00a4f41cdc1ac94d4296af1ee21c31f0}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!rocket\_launcher@{rocket\_launcher}}
+\index{rocket\_launcher@{rocket\_launcher}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{rocket\_launcher}{rocket\_launcher}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a00a4f41cdc1ac94d4296af1ee21c31f0} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+rocket\+\_\+launcher = self.\+weapon\+\_\+loader.\+Rocket\+\_\+\+Launcher()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a797a927cf99340ed230c898ba430751b}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!screen@{screen}}
+\index{screen@{screen}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a797a927cf99340ed230c898ba430751b} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+screen = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_ac8e5096b5671d32b5fb358b1c813f72d}{changeable\+\_\+values.\+SCREEN}}}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a643eb8ef69ca428f28b100cf74a93bd4}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!search\_enemies@{search\_enemies}}
+\index{search\_enemies@{search\_enemies}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{search\_enemies}{search\_enemies}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a643eb8ef69ca428f28b100cf74a93bd4} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+search\+\_\+enemies = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_search___enemies}{Search\+\_\+\+Enemies}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_af510c6010fc4e73c930b08bb8d9322ec}{enemys}}=self.\+enemys, \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a758e9f8adb7ec9f5104f3733850529ad}{camera}}=self.\+camera)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a398ed53a2108acb00fa9f2be0a087509}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!search\_weapon@{search\_weapon}}
+\index{search\_weapon@{search\_weapon}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{search\_weapon}{search\_weapon}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a398ed53a2108acb00fa9f2be0a087509} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+search\+\_\+weapon = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_pickup___weapon}{Pickup\+\_\+\+Weapon}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a5bc028f61e647df838823e875804d909}{player}}=self.\+player)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a2dc99ecb5a6bdf4058a278a5a1ce8c19}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!shotgun@{shotgun}}
+\index{shotgun@{shotgun}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{shotgun}{shotgun}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a2dc99ecb5a6bdf4058a278a5a1ce8c19} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+shotgun = self.\+weapon\+\_\+loader.\+Shotgun()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a8e5d25e80638675abb30bb35709abc8a}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!surface@{surface}}
+\index{surface@{surface}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{surface}{surface}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a8e5d25e80638675abb30bb35709abc8a} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+surface = self.\+map.\+screen.\+copy()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ac2a59d8429b7861e2ac19fdad06725bb}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!text@{text}}
+\index{text@{text}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ac2a59d8429b7861e2ac19fdad06725bb} 
+dict src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+text}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{\textcolor{stringliteral}{"{}JOHN..."{}}:\ (\textcolor{keywordtype}{None},\ \textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f\textcolor{stringliteral}{"{}Use\ \{dict\_to\_text(controlls.ALL\_KEYS["{}}UP\textcolor{stringliteral}{"{}])\},\ \{dict\_to\_text(controlls.ALL\_KEYS["{}}LEFT\textcolor{stringliteral}{"{}])\},\ \{dict\_to\_text(controlls.ALL\_KEYS["{}}DOWN\textcolor{stringliteral}{"{}])\},\ \{dict\_to\_text(controlls.ALL\_KEYS["{}}RIGHT\textcolor{stringliteral}{"{}])\}\ to\ move\ John..."{}}:(self.wasd.call,\ \textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f\textcolor{stringliteral}{"{}Great,\ now\ pick\ up\ the\ weapon\ John,\ press\ \{dict\_to\_text(controlls.PICK\_UP\_WEAPON)\}\ and\ not\ \{dict\_to\_text(controlls.DROP\_WEAPON\_KEYS)\}\ or\ you\ will\ drop\ it"{}}:\ (self.search\_weapon.call,\ \textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f\textcolor{stringliteral}{"{}Locate\ the\ enemies\ John,\ use\ \{dict\_to\_text(controlls.CAMERA\_LOOK\_AROUND)\}\ to\ look\ around..."{}}:\ (self.search\_enemies.call,\ \textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f\textcolor{stringliteral}{"{}Do\ you\ know\ how\ to\ use\ a\ trigger?\ Use\ \{dict\_to\_text(controlls.SHOOT\_KEYS)\}\ to\ shoot\ those\ Tim\ Cheeses\ John.\ Show\ them\ no\ mercy."{}}:\ (self.kill\_enemies.call,\ \textcolor{keyword}{True})\}}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aaddd1d3cd9cdc39d46dbcab55ff67de7}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!tutorial\_an@{tutorial\_an}}
+\index{tutorial\_an@{tutorial\_an}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{tutorial\_an}{tutorial\_an}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_aaddd1d3cd9cdc39d46dbcab55ff67de7} 
+bool src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+tutorial\+\_\+an = True}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ab278ed40afc051ed73d016914fec2303}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!wasd@{wasd}}
+\index{wasd@{wasd}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{wasd}{wasd}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ab278ed40afc051ed73d016914fec2303} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+wasd = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_w_a_s_d___pressed}{WASD\+\_\+\+Pressed}}()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a603a373990e40398517cecc067575292}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!weapon\_loader@{weapon\_loader}}
+\index{weapon\_loader@{weapon\_loader}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{weapon\_loader}{weapon\_loader}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_a603a373990e40398517cecc067575292} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+weapon\+\_\+loader = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader}{Weapon\+Loader}}(self.\+surface, self.\+blocking, self.\+enemys)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ae1676768902f13383997c6af46883c2a}\index{src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}!weapons@{weapons}}
+\index{weapons@{weapons}!src.modules.Levels.tutorial.Tutorial@{src.modules.Levels.tutorial.Tutorial}}
+\doxysubsubsection{\texorpdfstring{weapons}{weapons}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1tutorial_1_1_tutorial_ae1676768902f13383997c6af46883c2a} 
+src.\+modules.\+Levels.\+tutorial.\+Tutorial.\+weapons = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}(self.\+rocket\+\_\+launcher, self.\+glock, self.\+shotgun)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Levels/\mbox{\hyperlink{tutorial_8py}{tutorial.\+py}}\end{DoxyCompactItemize}

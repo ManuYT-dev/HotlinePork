@@ -1,0 +1,65 @@
+\doxysection{src.\+modules.\+General.\+functions Namespace Reference}
+\hypertarget{namespacesrc_1_1modules_1_1_general_1_1functions}{}\label{namespacesrc_1_1modules_1_1_general_1_1functions}\index{src.modules.General.functions@{src.modules.General.functions}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box}{Dialog\+Box}}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text}{Input\+Field\+Text}}
+\item 
+class \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacesrc_1_1modules_1_1_general_1_1functions_a7d7714a6c9b3bcec465102ae85e46919}{circle\+\_\+collision\+\_\+check}} (pygame.\+FRect\texorpdfstring{$\vert$}{|}list\mbox{[}pygame.\+FRect\mbox{]} blocking, int radius, pygame.\+Vector2 position=None)
+\item 
+bool \mbox{\hyperlink{namespacesrc_1_1modules_1_1_general_1_1functions_ac7ab00c1b0723a1d7ea75c5099aefff6}{check\+\_\+input}} (list\mbox{[}tuple\mbox{[}str, int\mbox{]}\mbox{]} input\+\_\+keys, pygame.\+event.\+Event event=None)
+\item 
+list\mbox{[}pygame.\+Vector2\mbox{]} \mbox{\hyperlink{namespacesrc_1_1modules_1_1_general_1_1functions_aa30341bebbe80654de736f3be7c42107}{a\+\_\+star}} (pygame.\+Vector2 start, pygame.\+Rect target, list\mbox{[}pygame.\+FRect\mbox{]} blocking, int max\+\_\+distance=1000, int grid\+\_\+size=32, tuple\mbox{[}int, int\mbox{]} buffer=(30, 20))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesrc_1_1modules_1_1_general_1_1functions_aa30341bebbe80654de736f3be7c42107}\index{src.modules.General.functions@{src.modules.General.functions}!a\_star@{a\_star}}
+\index{a\_star@{a\_star}!src.modules.General.functions@{src.modules.General.functions}}
+\doxysubsubsection{\texorpdfstring{a\_star()}{a\_star()}}
+{\footnotesize\ttfamily \label{namespacesrc_1_1modules_1_1_general_1_1functions_aa30341bebbe80654de736f3be7c42107} 
+ list\mbox{[}pygame.\+Vector2\mbox{]} src.\+modules.\+General.\+functions.\+a\+\_\+star (\begin{DoxyParamCaption}\item[{pygame.\+Vector2}]{start}{, }\item[{pygame.\+Rect}]{target}{, }\item[{list\mbox{[}pygame.\+FRect\mbox{]}}]{blocking}{, }\item[{int }]{max\+\_\+distance}{ = {\ttfamily 1000}, }\item[{int }]{grid\+\_\+size}{ = {\ttfamily 32}, }\item[{tuple\mbox{[}int, int\mbox{]} }]{buffer}{ = {\ttfamily (30,~20)}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs A* pathfinding centered around the enemy's position.
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1modules_1_1_general_1_1functions_ac7ab00c1b0723a1d7ea75c5099aefff6}\index{src.modules.General.functions@{src.modules.General.functions}!check\_input@{check\_input}}
+\index{check\_input@{check\_input}!src.modules.General.functions@{src.modules.General.functions}}
+\doxysubsubsection{\texorpdfstring{check\_input()}{check\_input()}}
+{\footnotesize\ttfamily \label{namespacesrc_1_1modules_1_1_general_1_1functions_ac7ab00c1b0723a1d7ea75c5099aefff6} 
+ bool src.\+modules.\+General.\+functions.\+check\+\_\+input (\begin{DoxyParamCaption}\item[{list\mbox{[}tuple\mbox{[}str, int\mbox{]}\mbox{]}}]{input\+\_\+keys}{, }\item[{pygame.\+event.\+Event }]{event}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if any of the specified inputs are pressed
+Args:
+    input_keys: List of tuples containing ((input_type, key_code), (input_type, key_code))
+    event: Optional pygame event to check for KEYDOWN/MOUSEBUTTONDOWN
+Returns:
+    bool: True if any input is pressed
+\end{DoxyVerb}
+ \Hypertarget{namespacesrc_1_1modules_1_1_general_1_1functions_a7d7714a6c9b3bcec465102ae85e46919}\index{src.modules.General.functions@{src.modules.General.functions}!circle\_collision\_check@{circle\_collision\_check}}
+\index{circle\_collision\_check@{circle\_collision\_check}!src.modules.General.functions@{src.modules.General.functions}}
+\doxysubsubsection{\texorpdfstring{circle\_collision\_check()}{circle\_collision\_check()}}
+{\footnotesize\ttfamily \label{namespacesrc_1_1modules_1_1_general_1_1functions_a7d7714a6c9b3bcec465102ae85e46919} 
+ bool src.\+modules.\+General.\+functions.\+circle\+\_\+collision\+\_\+check (\begin{DoxyParamCaption}\item[{pygame.\+FRect \texorpdfstring{$\vert$}{|} list\mbox{[}pygame.\+FRect\mbox{]}}]{blocking}{, }\item[{int}]{radius}{, }\item[{pygame.\+Vector2 }]{position}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks for collisions using a circular hitbox.
+
+Args:
+    blocking: Rectangle(s) to check collision against
+    radius: Radius of the circular hitbox
+    position: Optional position to check from (defaults to self.POSITION)
+
+Returns:
+    bool: True if collision detected, False otherwise
+\end{DoxyVerb}
+ 

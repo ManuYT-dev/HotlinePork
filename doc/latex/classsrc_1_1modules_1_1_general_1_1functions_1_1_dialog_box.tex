@@ -1,0 +1,298 @@
+\doxysection{src.\+modules.\+General.\+functions.\+Dialog\+Box Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box}{}\label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_acaec7f2b82750975a3c0ad1f3df3cd13}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_abbff98cfa1d5e0a38204cd33e612bbb0}{surface}}, pygame.\+font.\+Font \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa200b3ad7f13a3a4541b627559853988}{font}}, int width=None, int height=150, pygame.\+mixer.\+Sound \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74ec0878de71cfabbf821c74e681530c}{sound}}=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa0ef6721da00d22a71e10f5eafad095f}{show}} (self, str message, bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac7c6dfe9d7b7bb52f054806980950811}{skipable}}=True, callable \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa39ec18f733e04a64d7b6adb9f63912e}{on\+\_\+finish}}=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a3c2b4dbd2a1d8fbe33249e0d359243ee}{handle\+\_\+event}} (self, event)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a91c36073241112920ce747568a332a9e}{update}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac46b84a0fb1f873fe63e2522b48e65b7}{draw}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a47d99e6b77f06360932c9acc2a15254c}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_abbff98cfa1d5e0a38204cd33e612bbb0}{surface}} = surface
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa200b3ad7f13a3a4541b627559853988}{font}} = font
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_afd27f53a653cd3755531ad0a879e6d3b}{screen\+\_\+width}} = surface.\+get\+\_\+width()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a485e9914fe09febda2444de773d2d404}{screen\+\_\+height}} = surface.\+get\+\_\+height()
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a10b1d29f17ad176e7d762c5f2fe40028}{box\+\_\+width}} = width if width else self.\+screen\+\_\+width -\/ 40
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a6c7b2b4fe7837244d74c2e5a71120ae7}{box\+\_\+height}} = height
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a7e43d90b963f25cb3ac2761fcec66487}{box\+\_\+rect}}
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a2126b0a255016e58f89dd5d0095b2eda}{active}} = False
+\item 
+str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_af869f509662c896be604d12c9ccf28cb}{full\+\_\+text}} = "{}"{}
+\item 
+str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a4a71ccfadd6d405992315e4bb9316440}{visible\+\_\+text}} = "{}"{}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a4b5fa31c889c4359cf3bf02d585ffb48}{char\+\_\+index}} = 0
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a03b40a4ac68677609066f06e8722f86a}{text\+\_\+speed}} = 1
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74ec0878de71cfabbf821c74e681530c}{sound}} = sound
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac7c6dfe9d7b7bb52f054806980950811}{skipable}} = True
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa39ec18f733e04a64d7b6adb9f63912e}{on\+\_\+finish}} = None
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74b05411452c49154bfb32654bdccceb}{frame\+\_\+counter}} = 0
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a7e6a7b72fc1803538383851168c843d0}{finished}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class representing a dialog box.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_acaec7f2b82750975a3c0ad1f3df3cd13}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_acaec7f2b82750975a3c0ad1f3df3cd13} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{surface}{, }\item[{pygame.\+font.\+Font}]{font}{, }\item[{int }]{width}{ = {\ttfamily None}, }\item[{int }]{height}{ = {\ttfamily 150}, }\item[{pygame.\+mixer.\+Sound }]{sound}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a DialogBox object.
+
+Args:
+    surface (pygame.Surface): The surface to draw the dialog box on.
+    font (pygame.font.Font): The font to use for the text in the dialog box.
+    width (int, optional): The width of the dialog box. Defaults to None.
+    height (int, optional): The height of the dialog box. Defaults to 150.
+    sound (pygame.mixer.Sound, optional): The sound to play when the dialog box is shown. Defaults to None.
+
+Attributes:
+    surface (pygame.Surface): The surface to draw the dialog box on.
+    font (pygame.font.Font): The font to use for the text in the dialog box.
+    screen_width (int): The width of the screen.
+    screen_height (int): The height of the screen.
+    box_width (int): The width of the dialog box.
+    box_height (int): The height of the dialog box.
+    box_rect (pygame.Rect): The rectangle of the dialog box.
+    active (bool): Whether the dialog box is currently active.
+    full_text (str): The full text of the dialog box.
+    visible_text (str): The currently visible text of the dialog box.
+    char_index (int): The index of the current character in the text.
+    text_speed (int): The speed of the text in chars per frame.
+    sound (pygame.mixer.Sound): The sound to play when the dialog box is shown.
+    skipable (bool): Whether the dialog box can be skipped.
+    on_finish (callable): The function to call when the dialog box is finished.
+    frame_counter (int): The number of frames the dialog box has been active.
+    finished (bool): Whether the dialog box has finished showing the text.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a47d99e6b77f06360932c9acc2a15254c}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!close@{close}}
+\index{close@{close}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a47d99e6b77f06360932c9acc2a15254c} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Closes the dialog box and runs its on_finish callback if it exists.
+
+The active flag is set to False, and if the on_finish callback exists, it is
+called. This method is called when the dialog box is finished, or when the
+user presses any key to skip the dialog box if it is skipable.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac46b84a0fb1f873fe63e2522b48e65b7}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!draw@{draw}}
+\index{draw@{draw}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac46b84a0fb1f873fe63e2522b48e65b7} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws the dialog box on the given surface.
+
+If the dialog box is active, this method will draw a black rectangle with a
+white border and render the visible text on it. If the dialog box is
+finished or has a skipable flag, it will also render a hint text on the
+bottom right of the box.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a3c2b4dbd2a1d8fbe33249e0d359243ee}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!handle\_event@{handle\_event}}
+\index{handle\_event@{handle\_event}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{handle\_event()}{handle\_event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a3c2b4dbd2a1d8fbe33249e0d359243ee} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+handle\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles user input events related to the dialog box.
+
+If the dialog box is active, this method will check for key or mouse button
+events. If the dialog box is skippable or finished, it will either fast-forward
+the text display or close the dialog box.
+
+Args:
+    event (pygame.event.Event): The event to handle.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa0ef6721da00d22a71e10f5eafad095f}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!show@{show}}
+\index{show@{show}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa0ef6721da00d22a71e10f5eafad095f} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+show (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{, }\item[{bool }]{skipable}{ = {\ttfamily True}, }\item[{callable }]{on\+\_\+finish}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shows the dialog box with the given message.
+
+Args:
+    message (str): The text to display in the dialog box.
+    skipable (bool, optional): Whether the dialog box can be skipped. Defaults to True.
+    on_finish (callable, optional): A function to call after the dialog box has finished showing the text. Defaults to None.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a91c36073241112920ce747568a332a9e}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!update@{update}}
+\index{update@{update}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a91c36073241112920ce747568a332a9e} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the state of the dialog box.
+
+If the dialog box is active and not finished, this method will increment a
+frame counter and check if it has reached the text speed. If it has, it will
+increment the character index and update the visible text. If the character
+index has reached the length of the full text, it will set the finished flag
+to True.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a2126b0a255016e58f89dd5d0095b2eda}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!active@{active}}
+\index{active@{active}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a2126b0a255016e58f89dd5d0095b2eda} 
+bool src.\+modules.\+General.\+functions.\+Dialog\+Box.\+active = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a6c7b2b4fe7837244d74c2e5a71120ae7}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!box\_height@{box\_height}}
+\index{box\_height@{box\_height}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{box\_height}{box\_height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a6c7b2b4fe7837244d74c2e5a71120ae7} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+box\+\_\+height = height}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a7e43d90b963f25cb3ac2761fcec66487}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!box\_rect@{box\_rect}}
+\index{box\_rect@{box\_rect}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{box\_rect}{box\_rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a7e43d90b963f25cb3ac2761fcec66487} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+box\+\_\+rect}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ pygame.Rect(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (self.screen\_width\ -\/\ self.box\_width)\ //\ 2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.screen\_height\ -\/\ self.box\_height\ -\/\ 20,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.box\_width,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.box\_height}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a10b1d29f17ad176e7d762c5f2fe40028}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!box\_width@{box\_width}}
+\index{box\_width@{box\_width}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{box\_width}{box\_width}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a10b1d29f17ad176e7d762c5f2fe40028} 
+int src.\+modules.\+General.\+functions.\+Dialog\+Box.\+box\+\_\+width = width if width else self.\+screen\+\_\+width -\/ 40}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a4b5fa31c889c4359cf3bf02d585ffb48}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!char\_index@{char\_index}}
+\index{char\_index@{char\_index}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{char\_index}{char\_index}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a4b5fa31c889c4359cf3bf02d585ffb48} 
+int src.\+modules.\+General.\+functions.\+Dialog\+Box.\+char\+\_\+index = 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a7e6a7b72fc1803538383851168c843d0}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!finished@{finished}}
+\index{finished@{finished}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{finished}{finished}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a7e6a7b72fc1803538383851168c843d0} 
+bool src.\+modules.\+General.\+functions.\+Dialog\+Box.\+finished = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa200b3ad7f13a3a4541b627559853988}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!font@{font}}
+\index{font@{font}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa200b3ad7f13a3a4541b627559853988} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+font = font}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74b05411452c49154bfb32654bdccceb}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!frame\_counter@{frame\_counter}}
+\index{frame\_counter@{frame\_counter}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{frame\_counter}{frame\_counter}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74b05411452c49154bfb32654bdccceb} 
+int src.\+modules.\+General.\+functions.\+Dialog\+Box.\+frame\+\_\+counter = 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_af869f509662c896be604d12c9ccf28cb}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!full\_text@{full\_text}}
+\index{full\_text@{full\_text}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{full\_text}{full\_text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_af869f509662c896be604d12c9ccf28cb} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+full\+\_\+text = "{}"{}}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa39ec18f733e04a64d7b6adb9f63912e}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!on\_finish@{on\_finish}}
+\index{on\_finish@{on\_finish}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{on\_finish}{on\_finish}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_aa39ec18f733e04a64d7b6adb9f63912e} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+on\+\_\+finish = None}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a485e9914fe09febda2444de773d2d404}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!screen\_height@{screen\_height}}
+\index{screen\_height@{screen\_height}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{screen\_height}{screen\_height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a485e9914fe09febda2444de773d2d404} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+screen\+\_\+height = surface.\+get\+\_\+height()}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_afd27f53a653cd3755531ad0a879e6d3b}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!screen\_width@{screen\_width}}
+\index{screen\_width@{screen\_width}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{screen\_width}{screen\_width}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_afd27f53a653cd3755531ad0a879e6d3b} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+screen\+\_\+width = surface.\+get\+\_\+width()}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac7c6dfe9d7b7bb52f054806980950811}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!skipable@{skipable}}
+\index{skipable@{skipable}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{skipable}{skipable}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_ac7c6dfe9d7b7bb52f054806980950811} 
+bool src.\+modules.\+General.\+functions.\+Dialog\+Box.\+skipable = True}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74ec0878de71cfabbf821c74e681530c}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!sound@{sound}}
+\index{sound@{sound}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a74ec0878de71cfabbf821c74e681530c} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+sound = sound}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_abbff98cfa1d5e0a38204cd33e612bbb0}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!surface@{surface}}
+\index{surface@{surface}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{surface}{surface}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_abbff98cfa1d5e0a38204cd33e612bbb0} 
+src.\+modules.\+General.\+functions.\+Dialog\+Box.\+surface = surface}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a03b40a4ac68677609066f06e8722f86a}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!text\_speed@{text\_speed}}
+\index{text\_speed@{text\_speed}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{text\_speed}{text\_speed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a03b40a4ac68677609066f06e8722f86a} 
+int src.\+modules.\+General.\+functions.\+Dialog\+Box.\+text\+\_\+speed = 1}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a4a71ccfadd6d405992315e4bb9316440}\index{src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}!visible\_text@{visible\_text}}
+\index{visible\_text@{visible\_text}!src.modules.General.functions.DialogBox@{src.modules.General.functions.DialogBox}}
+\doxysubsubsection{\texorpdfstring{visible\_text}{visible\_text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_dialog_box_a4a71ccfadd6d405992315e4bb9316440} 
+str src.\+modules.\+General.\+functions.\+Dialog\+Box.\+visible\+\_\+text = "{}"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+General/\mbox{\hyperlink{functions_8py}{functions.\+py}}\end{DoxyCompactItemize}

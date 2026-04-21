@@ -1,0 +1,563 @@
+\doxysection{src.\+modules.\+Levels.\+endless.\+ENDLESS Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s}{}\label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a53351f0d5b203bc10a13064076333f34}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ab5144c3df285698e60b0f52a11fbef64}{entity\+\_\+init}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a860eddc2925db716d2e898d659937ecd}{update}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac995ac08a841a7fec5c02226efc07c7c}{update\+\_\+delta\+\_\+times}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ad7457b89584bcfc1db74094739a04104}{event}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada4ffcabae76bcf986aaca0d8444cec7}{draw}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_acdd0923e23ba7e37432996278903ce89}{next\+\_\+wave}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ad333d53253989a9f3323c4f0c11b4387}{new\+\_\+path}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac5c86fee42cb3a90f365815a782efefa}{check\+\_\+path\+\_\+ready}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a8fe98f59a03773f97a4863e8dc106971}{cleanup}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada188292cdaf27462da6c3f9cdea4a1e}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_afe6060e1242b1f7541646e66f79a12c2}{draw\+\_\+health\+\_\+bar}} (pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9197ac6202a99b9e059bd063e48df7de}{screen}}, int health, int max\+\_\+health=100, int width=200, int height=25, int padding=10)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ae3ca84926b08d6fe8e1f55ace46e6300}{stat\+\_\+saver}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/player\+\_\+stats.\+json"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9197ac6202a99b9e059bd063e48df7de}{screen}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_ac8e5096b5671d32b5fb358b1c813f72d}{changeable\+\_\+values.\+SCREEN}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a429bc6882efa0b816e701810f6072e09}{map}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a2369b906c92ad9ee22a9ff31a520bc5d}{entity\+\_\+surface}} = pygame.\+Surface(self.\+map.\+screen.\+size, pygame.\+SRCALPHA)
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a00a3c1084688f62f250271abc19a2a94}{completed}} = False
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a50bf5a4c9339fcc43cf8f1ffc6067ae2}{kills}} = 0
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a814b6f45c6d62d8a190b65efbe598936}{clock}} = pygame.\+time.\+Clock()
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a23cafaaec1ad01db857f1d4e9e89f8cc}{wave}} = 1
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_aba90665ac9458379b6b1336e4138b423}{alive\+\_\+enemies}} = 1
+\item 
+dict \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a4ed159a52f5c8e80418e5787591083e9}{difficulty}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_afd817d4da3d725502485aeab4bb76569}{executor}} = Process\+Pool\+Executor()
+\item 
+list \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9ab11b2ce462d7590c37dbd6a3e038ad}{wave\+\_\+futures}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a777488c005f8e2f7ac53ffde4d5dd92c}{walls}} = self.\+map.\+walls
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a7b024553e40f968abdc42ef4cdf29d1a}{font}} = pygame.\+font.\+Sys\+Font("{}Courier"{}, 32, True)
+\item 
+list \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a7cce592e2af721d58461a98f74cd55eb}{enemy\+\_\+spawns}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_aa3c005b96245f4d4facb7ec7304cf4bc}{camera}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_player}{Player}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a800fb2389dcf680adc17013dee323d54}{player}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a430e773b24d7590c3472835b3138f62d}{enemy1}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}\mbox{[}\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}}\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a50b8995d393f59decb6bd10105b7eef6}{enemys}} = self.\+enemy1.\+clear\+\_\+cls()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a52ff69357629fb73001ab87a23aac934}{weapon\+\_\+loader}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader}{Weapon\+Loader}}(self.\+entity\+\_\+surface, self.\+walls, \mbox{[}self.\+player\mbox{]})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_af7cadcb03140be800da61479179835e9}{player\+\_\+start\+\_\+weapon}} = self.\+weapon\+\_\+loader.\+Glock()
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac0d6bdfff8df7996e02ff549bf289b6d}{delta\+\_\+time}} = 600 / self.\+clock.\+get\+\_\+fps() if self.\+clock.\+get\+\_\+fps() $>$ 0 else 1
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac6b28a1f8d6ceb7b6878bbae86a15ab1}{endless\+\_\+an}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac9ad67c8766b0bb2e59116d33e723214}{current\+\_\+difficulty}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_difficulty___chooser}{Difficulty\+\_\+\+Chooser}}(self.\+screen).\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada188292cdaf27462da6c3f9cdea4a1e}{run}}()
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ab560366541fbb7353835406daba8aa45}{start\+\_\+time}} = pygame.\+time.\+get\+\_\+ticks()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_adf3956ff6b4cc6ae3096a04afe0efe05}{first\+\_\+call\+\_\+start\+\_\+time}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class representing the endless mode of the game.
+
+Attributes:
+    stat_saver (SaveData): A SaveData object for saving and loading the player stats.
+    screen (pygame.Surface): The main screen surface.
+    map (TileMap): The TileMap object representing the map.
+    entity_surface (pygame.Surface): The surface for drawing entities.
+    completed (bool): Whether the game is completed.
+    kills (int): The number of kills the player has.
+    clock (pygame.time.Clock): The clock object for tracking time.
+    wave (int): The current wave number.
+    kills (int): The number of kills the player has.
+    alive_enemies (int): The number of alive enemies.
+    difficulty (dict): A dictionary with the difficulty settings.
+    wave_difficulty (dict): A dictionary containing the wave difficulty settings.
+    wave_number (int): The current wave number.
+    wave_kills (int): The number of kills in the current wave.
+    wave_alive_enemies (int): The number of alive enemies in the current wave.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a53351f0d5b203bc10a13064076333f34}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a53351f0d5b203bc10a13064076333f34} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the ENDLESS class.
+
+This method initializes the ENDLESS class. It creates a TileMap object
+from the map_endless.csv and Floors.png files, creates a surface for
+drawing entities, and sets up the difficulty settings. It also sets up
+the wave and kill counters, the clock, and the ProcessPoolExecutor for
+running the waves in parallel.
+
+Attributes:
+    stat_saver (SaveData): A SaveData object for saving and loading the
+        player stats.
+    screen (pygame.Surface): The main screen surface.
+    map (TileMap): The TileMap object representing the map.
+    entity_surface (pygame.Surface): The surface for drawing entities.
+    completed (bool): Whether the game is completed.
+    kills (int): The number of kills the player has.
+    clock (pygame.time.Clock): The clock object for tracking time.
+    wave (int): The current wave number.
+    kills (int): The number of kills the player has.
+    alive_enemies (int): The number of alive enemies.
+    difficulty (dict): A dictionary with the difficulty settings.
+    executor (ProcessPoolExecutor): The ProcessPoolExecutor for running
+        the waves in parallel.
+    wave_futures (list): A list of futures for the waves.
+    walls (list): A list of walls.
+    font (pygame.font.Font): The font for drawing text.
+    entity_init (function): A function to initialize the entities.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac5c86fee42cb3a90f365815a782efefa}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!check\_path\_ready@{check\_path\_ready}}
+\index{check\_path\_ready@{check\_path\_ready}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{check\_path\_ready()}{check\_path\_ready()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac5c86fee42cb3a90f365815a782efefa} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+check\+\_\+path\+\_\+ready (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the pathfinding computations for enemies are complete.
+
+This method iterates over the list of wave futures to check if any futures have completed.
+If a future is done, it retrieves the computed path and updates the enemy's path and
+last seen position. Completed futures are removed from the wave futures list. If an
+exception occurs during the path retrieval, an error message is printed.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a8fe98f59a03773f97a4863e8dc106971}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a8fe98f59a03773f97a4863e8dc106971} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+cleanup (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada4ffcabae76bcf986aaca0d8444cec7}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!draw@{draw}}
+\index{draw@{draw}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada4ffcabae76bcf986aaca0d8444cec7} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Renders the game screen, displaying the map, entities, and various game stats.
+
+This method blits the map and entity surfaces onto the main screen using the current camera view.
+It also displays the player's time alive, current wave, difficulty level, and kill count.
+Additionally, it draws the player's health bar at the top of the screen.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_afe6060e1242b1f7541646e66f79a12c2}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!draw\_health\_bar@{draw\_health\_bar}}
+\index{draw\_health\_bar@{draw\_health\_bar}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{draw\_health\_bar()}{draw\_health\_bar()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_afe6060e1242b1f7541646e66f79a12c2} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+draw\+\_\+health\+\_\+bar (\begin{DoxyParamCaption}\item[{pygame.\+Surface}]{screen}{, }\item[{int}]{health}{, }\item[{int }]{max\+\_\+health}{ = {\ttfamily 100}, }\item[{int }]{width}{ = {\ttfamily 200}, }\item[{int }]{height}{ = {\ttfamily 25}, }\item[{int }]{padding}{ = {\ttfamily 10}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Draws a health bar on the given screen.
+
+This method draws a health bar that visually represents the current health
+relative to the maximum health. The bar consists of a red background with
+a green overlay indicating the proportion of health remaining. It also
+includes a text display of the current health over the maximum health.
+
+Args:
+    screen (pygame.Surface): The surface on which to draw the health bar.
+    health (int): The current health value.
+    max_health (int, optional): The maximum health value. Defaults to 100.
+    width (int, optional): The width of the health bar. Defaults to 200.
+    height (int, optional): The height of the health bar. Defaults to 25.
+    padding (int, optional): The padding from the bottom and left edges of
+        the screen. Defaults to 10.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ab5144c3df285698e60b0f52a11fbef64}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!entity\_init@{entity\_init}}
+\index{entity\_init@{entity\_init}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{entity\_init()}{entity\_init()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ab5144c3df285698e60b0f52a11fbef64} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+entity\+\_\+init (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the entities for the ENDLESS game mode.
+
+This method initializes the entities for the ENDLESS game mode. It sets
+up the player, the enemy spawns, the camera, and the weapon loader.
+
+Attributes:
+    enemy_spawns (list[pygame.Vector2]): A list of positions for the
+        enemy spawns.
+    camera (Camera): The camera for the game.
+    player (Player): The player entity.
+    enemy1 (Enemy): The first enemy entity.
+    enemys (Groups[Enemy]): A group containing the enemy entities.
+    weapon_loader (WeaponLoader): The weapon loader for the game.
+    player_start_weapon (Weapon): The starting weapon for the player.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ad7457b89584bcfc1db74094739a04104}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!event@{event}}
+\index{event@{event}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ad7457b89584bcfc1db74094739a04104} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+event (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles game events for the endless mode.
+
+This method processes and handles various pygame events such as quitting 
+the game, key presses, and mouse button presses. It allows the player to 
+pick up, drop, and shoot weapons based on the input controls. It also 
+handles camera movement, either tracking the player or looking around 
+based on mouse position.
+
+Attributes:
+    endless_an (bool): A flag to indicate whether the endless mode is active.
+
+Controls:
+    PICK_UP_WEAPON: Allows the player to pick up a weapon.
+    DROP_WEAPON_KEYS: Allows the player to drop a weapon.
+    SHOOT_KEYS: Allows the player to shoot.
+    CAMERA_LOOK_AROUND: Allows the camera to look around.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ad333d53253989a9f3323c4f0c11b4387}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!new\_path@{new\_path}}
+\index{new\_path@{new\_path}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{new\_path()}{new\_path()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ad333d53253989a9f3323c4f0c11b4387} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+new\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Starts a new path calculation for all enemies.
+
+This method submits a path calculation for each enemy in the `enemys` list to the executor.
+The arguments for the path calculation are the enemy's position, the player's position, the
+blocking tiles, the tile size, the algorithm parameters and the maximum allowed time for
+the path calculation. The futures are stored in the `wave_futures` list.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_acdd0923e23ba7e37432996278903ce89}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!next\_wave@{next\_wave}}
+\index{next\_wave@{next\_wave}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{next\_wave()}{next\_wave()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_acdd0923e23ba7e37432996278903ce89} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+next\+\_\+wave (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Starts the next wave of enemies.
+
+This method increments the current wave number and increases the player's health by a certain amount.
+It then spawns a certain number of enemies at random locations on the map, with a random weapon. The
+enemies are added to the `enemys` list and their `gun` attribute is set. The `alive_enemies` attribute is
+updated to reflect the number of alive enemies.
+
+Finally, the method calculates the path for each enemy to the player and updates the `wave_futures`
+list with the future objects returned by the executor. The `new_path` method is called to start the
+pathfinding process.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada188292cdaf27462da6c3f9cdea4a1e}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!run@{run}}
+\index{run@{run}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada188292cdaf27462da6c3f9cdea4a1e} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Starts the endless mode game loop.
+
+This method is the main loop for the endless mode. It first checks if the user has selected a difficulty
+level. If not, it shows the difficulty chooser menu. If the user has chosen a difficulty, it sets the
+player's health to the maximum for that difficulty and resets the enemies to the starting positions.
+It then starts the main game loop, where it handles events, updates the game state, draws the screen,
+and limits the frame rate to 60 FPS. If the player's health reaches 0, the game loop ends and the
+`completed` attribute is set to True.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a860eddc2925db716d2e898d659937ecd}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!update@{update}}
+\index{update@{update}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a860eddc2925db716d2e898d659937ecd} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the state of the entities in the level.
+
+This method updates the player, all enemies, and all bullets in the level. It
+also checks if the current wave of enemies has been cleared and if so, spawns a
+new wave of enemies. Finally, it increments the player's score if the number of
+alive enemies has decreased.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac995ac08a841a7fec5c02226efc07c7c}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!update\_delta\_times@{update\_delta\_times}}
+\index{update\_delta\_times@{update\_delta\_times}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{update\_delta\_times()}{update\_delta\_times()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac995ac08a841a7fec5c02226efc07c7c} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+update\+\_\+delta\+\_\+times (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the delta time for all entities in the level.
+
+This method gets the current frame rate from the clock object and calculates
+the delta time from it. It then iterates over all entities in the level and
+updates their delta time.
+
+Returns:
+    None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_aba90665ac9458379b6b1336e4138b423}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!alive\_enemies@{alive\_enemies}}
+\index{alive\_enemies@{alive\_enemies}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{alive\_enemies}{alive\_enemies}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_aba90665ac9458379b6b1336e4138b423} 
+int src.\+modules.\+Levels.\+endless.\+ENDLESS.\+alive\+\_\+enemies = 1}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_aa3c005b96245f4d4facb7ec7304cf4bc}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!camera@{camera}}
+\index{camera@{camera}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_aa3c005b96245f4d4facb7ec7304cf4bc} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}} src.\+modules.\+Levels.\+endless.\+ENDLESS.\+camera}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Camera(main\_screen=self.screen,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ surface=self.entity\_surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ width=self.screen.width,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ height=self.screen.height)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a814b6f45c6d62d8a190b65efbe598936}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!clock@{clock}}
+\index{clock@{clock}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a814b6f45c6d62d8a190b65efbe598936} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+clock = pygame.\+time.\+Clock()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a00a3c1084688f62f250271abc19a2a94}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!completed@{completed}}
+\index{completed@{completed}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{completed}{completed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a00a3c1084688f62f250271abc19a2a94} 
+bool src.\+modules.\+Levels.\+endless.\+ENDLESS.\+completed = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac9ad67c8766b0bb2e59116d33e723214}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!current\_difficulty@{current\_difficulty}}
+\index{current\_difficulty@{current\_difficulty}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{current\_difficulty}{current\_difficulty}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac9ad67c8766b0bb2e59116d33e723214} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+current\+\_\+difficulty = \mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_difficulty___chooser}{Difficulty\+\_\+\+Chooser}}(self.\+screen).\mbox{\hyperlink{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ada188292cdaf27462da6c3f9cdea4a1e}{run}}()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac0d6bdfff8df7996e02ff549bf289b6d}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!delta\_time@{delta\_time}}
+\index{delta\_time@{delta\_time}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{delta\_time}{delta\_time}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac0d6bdfff8df7996e02ff549bf289b6d} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+delta\+\_\+time = 600 / self.\+clock.\+get\+\_\+fps() if self.\+clock.\+get\+\_\+fps() $>$ 0 else 1}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a4ed159a52f5c8e80418e5787591083e9}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{difficulty}{difficulty}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a4ed159a52f5c8e80418e5787591083e9} 
+dict src.\+modules.\+Levels.\+endless.\+ENDLESS.\+difficulty}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{\textcolor{stringliteral}{"{}EASY"{}}:\ (0.5,\ 200,\ 10,\ 100),\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}MEDIUM"{}}:\ (0.75,\ 150,\ 20,\ 50),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}HARD"{}}:\ (1,\ 100,\ 30,\ 25)\}}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac6b28a1f8d6ceb7b6878bbae86a15ab1}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!endless\_an@{endless\_an}}
+\index{endless\_an@{endless\_an}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{endless\_an}{endless\_an}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ac6b28a1f8d6ceb7b6878bbae86a15ab1} 
+bool src.\+modules.\+Levels.\+endless.\+ENDLESS.\+endless\+\_\+an = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a430e773b24d7590c3472835b3138f62d}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!enemy1@{enemy1}}
+\index{enemy1@{enemy1}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{enemy1}{enemy1}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a430e773b24d7590c3472835b3138f62d} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_enemy}{Enemy}} src.\+modules.\+Levels.\+endless.\+ENDLESS.\+enemy1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Enemy(image\_path=changeable\_values.DEFAULT\_PATH\ +\ \textcolor{stringliteral}{r"{}/assets/entities/gegner.png"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ POSITION=pygame.Vector2(600,\ 600),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.walls,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.entity\_surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ main\_target=self.player,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (0,\ 0,\ 255,\ 128),\ 3],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ movement\_speed=0.5,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enemy\_scale=(100,\ 60))}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a7cce592e2af721d58461a98f74cd55eb}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!enemy\_spawns@{enemy\_spawns}}
+\index{enemy\_spawns@{enemy\_spawns}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{enemy\_spawns}{enemy\_spawns}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a7cce592e2af721d58461a98f74cd55eb} 
+list src.\+modules.\+Levels.\+endless.\+ENDLESS.\+enemy\+\_\+spawns}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [pygame.Vector2(100,\ 100),\ pygame.Vector2(1550,\ 100),\ pygame.Vector2(3100,\ 100),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pygame.Vector2(100,\ 1550),\ pygame.Vector2(3100,\ 1550),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pygame.Vector2(100,\ 3100),\ pygame.Vector2(1550,\ 3150),\ pygame.Vector2(3150,\ 3150)]}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a50b8995d393f59decb6bd10105b7eef6}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!enemys@{enemys}}
+\index{enemys@{enemys}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{enemys}{enemys}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a50b8995d393f59decb6bd10105b7eef6} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+enemys = self.\+enemy1.\+clear\+\_\+cls()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a2369b906c92ad9ee22a9ff31a520bc5d}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!entity\_surface@{entity\_surface}}
+\index{entity\_surface@{entity\_surface}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{entity\_surface}{entity\_surface}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a2369b906c92ad9ee22a9ff31a520bc5d} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+entity\+\_\+surface = pygame.\+Surface(self.\+map.\+screen.\+size, pygame.\+SRCALPHA)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_afd817d4da3d725502485aeab4bb76569}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!executor@{executor}}
+\index{executor@{executor}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{executor}{executor}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_afd817d4da3d725502485aeab4bb76569} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+executor = Process\+Pool\+Executor()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_adf3956ff6b4cc6ae3096a04afe0efe05}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!first\_call\_start\_time@{first\_call\_start\_time}}
+\index{first\_call\_start\_time@{first\_call\_start\_time}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{first\_call\_start\_time}{first\_call\_start\_time}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_adf3956ff6b4cc6ae3096a04afe0efe05} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+first\+\_\+call\+\_\+start\+\_\+time = None}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a7b024553e40f968abdc42ef4cdf29d1a}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!font@{font}}
+\index{font@{font}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a7b024553e40f968abdc42ef4cdf29d1a} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+font = pygame.\+font.\+Sys\+Font("{}Courier"{}, 32, True)}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a50bf5a4c9339fcc43cf8f1ffc6067ae2}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!kills@{kills}}
+\index{kills@{kills}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{kills}{kills}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a50bf5a4c9339fcc43cf8f1ffc6067ae2} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+kills = 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a429bc6882efa0b816e701810f6072e09}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!map@{map}}
+\index{map@{map}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a429bc6882efa0b816e701810f6072e09} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ TileMap(changeable\_values.DEFAULT\_PATH\ +\ \textcolor{stringliteral}{r"{}/assets/maps/endless/map\_endless.csv"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ changeable\_values.DEFAULT\_PATH\ +\ \textcolor{stringliteral}{r"{}/assets/maps/endless/Floors.png"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ final\_tile\_size=64)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a800fb2389dcf680adc17013dee323d54}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!player@{player}}
+\index{player@{player}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a800fb2389dcf680adc17013dee323d54} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+player}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Player(image\_path=changeable\_values.DEFAULT\_PATH\ +\ \textcolor{stringliteral}{r"{}/assets/entities/player.png"{}},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ POSITION=pygame.Vector2(100,\ 100),\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.walls,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.entity\_surface,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ camera=self.camera,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (0,\ 0,\ 255,\ 128),\ 3],\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ player\_scale=(100,\ 70),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ health=1)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_af7cadcb03140be800da61479179835e9}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!player\_start\_weapon@{player\_start\_weapon}}
+\index{player\_start\_weapon@{player\_start\_weapon}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{player\_start\_weapon}{player\_start\_weapon}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_af7cadcb03140be800da61479179835e9} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+player\+\_\+start\+\_\+weapon = self.\+weapon\+\_\+loader.\+Glock()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9197ac6202a99b9e059bd063e48df7de}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!screen@{screen}}
+\index{screen@{screen}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9197ac6202a99b9e059bd063e48df7de} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+screen = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_ac8e5096b5671d32b5fb358b1c813f72d}{changeable\+\_\+values.\+SCREEN}}}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ab560366541fbb7353835406daba8aa45}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!start\_time@{start\_time}}
+\index{start\_time@{start\_time}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{start\_time}{start\_time}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ab560366541fbb7353835406daba8aa45} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+start\+\_\+time = pygame.\+time.\+get\+\_\+ticks()}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ae3ca84926b08d6fe8e1f55ace46e6300}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!stat\_saver@{stat\_saver}}
+\index{stat\_saver@{stat\_saver}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{stat\_saver}{stat\_saver}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_ae3ca84926b08d6fe8e1f55ace46e6300} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+stat\+\_\+saver = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/player\+\_\+stats.\+json"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a777488c005f8e2f7ac53ffde4d5dd92c}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!walls@{walls}}
+\index{walls@{walls}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{walls}{walls}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a777488c005f8e2f7ac53ffde4d5dd92c} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+walls = self.\+map.\+walls}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a23cafaaec1ad01db857f1d4e9e89f8cc}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!wave@{wave}}
+\index{wave@{wave}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{wave}{wave}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a23cafaaec1ad01db857f1d4e9e89f8cc} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+wave = 1}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9ab11b2ce462d7590c37dbd6a3e038ad}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!wave\_futures@{wave\_futures}}
+\index{wave\_futures@{wave\_futures}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{wave\_futures}{wave\_futures}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a9ab11b2ce462d7590c37dbd6a3e038ad} 
+list src.\+modules.\+Levels.\+endless.\+ENDLESS.\+wave\+\_\+futures = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a52ff69357629fb73001ab87a23aac934}\index{src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}!weapon\_loader@{weapon\_loader}}
+\index{weapon\_loader@{weapon\_loader}!src.modules.Levels.endless.ENDLESS@{src.modules.Levels.endless.ENDLESS}}
+\doxysubsubsection{\texorpdfstring{weapon\_loader}{weapon\_loader}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_levels_1_1endless_1_1_e_n_d_l_e_s_s_a52ff69357629fb73001ab87a23aac934} 
+src.\+modules.\+Levels.\+endless.\+ENDLESS.\+weapon\+\_\+loader = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader}{Weapon\+Loader}}(self.\+entity\+\_\+surface, self.\+walls, \mbox{[}self.\+player\mbox{]})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Levels/\mbox{\hyperlink{endless_8py}{endless.\+py}}\end{DoxyCompactItemize}

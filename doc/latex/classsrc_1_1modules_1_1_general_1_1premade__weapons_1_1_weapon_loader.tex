@@ -1,0 +1,328 @@
+\doxysection{src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader}{}\label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ad1939445fad002c71cca924feab3e55d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ab3e9f4e55acb0850a2c5d38cfe67691f}{screen}}=None, list\mbox{[}pygame.\+FRect\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a826e915aea7082d73d14055b5c7f0d53}{blocking}}=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_adbbaa7cf0743fc9e5b599fb441b54c32}{targets}}=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a77d2aec6a179753771c94426164b2304}{load\+\_\+sounds}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_aa0ca6e9c7c0db2e9c5b8b7448e727058}{create\+\_\+guns}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_af3d9b083d66b3859013ab719eda34de8}{Rocket\+\_\+\+Launcher}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ae2ddc7bf9bc863a2425e35a068342a69}{Glock}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_aed8fb01d653f36c949036cc03cd26e59}{Shotgun}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ab3e9f4e55acb0850a2c5d38cfe67691f}{screen}} = screen
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a826e915aea7082d73d14055b5c7f0d53}{blocking}} = blocking
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_adbbaa7cf0743fc9e5b599fb441b54c32}{targets}} = targets
+\item 
+str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ad56ca1521e1737ca508053706f4a6fa3}{gun\+\_\+spritesheet\+\_\+path}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + "{}/assets/designs/Weapons.\+png"{}
+\item 
+dict\mbox{[}str, pygame.\+Surface\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a0cfc5a173add3fd2a977d790781ef20e}{gun\+\_\+spritesheet}}
+\item 
+str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a4d50baedd61fc17f32e059f2a5abfdea}{bullet\+\_\+spritesheet\+\_\+path}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + "{}/assets/designs/Projectiles.\+png"{}
+\item 
+dict\mbox{[}str, pygame.\+Surface\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3187226b801cb11448b707f060001958}{bullet\+\_\+spritesheet}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a77ee5ca28c193ddeec38adb942486b0d}{shotgun\+\_\+sound}} = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Shotgun.\+wav"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3002e88b76f789363c917b103ed08d88}{glock\+\_\+sound}} = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Pistol.\+wav"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_af3800dee1a818ab7317bf50a865bb5fc}{rocket\+\_\+sound}} = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Rocket.\+wav"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a71c8af238cb6d869d4df7ed3702ea740}{rocket\+\_\+explode}} = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Explosion.\+wav"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a5043ced2e96104d9a9225826c6e84e83}{shotgun}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{Weapon}} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3c6a5fb9a18fe95f3d892baf7cc2c2b5}{glock}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{Weapon}} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3b692cc9bca7b66ef6d5feb5ea60a001}{rocket\+\_\+launcher}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+dict\mbox{[}str, pygame.\+Surface\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a07c38ceed14c79604dffc42bf06c60ad}{\+\_\+load\+\_\+spritesheet}} (self, int image\+\_\+width, int image\+\_\+height, int final\+\_\+width, int final\+\_\+height, str path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class for loading and creating weapons.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ad1939445fad002c71cca924feab3e55d}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ad1939445fad002c71cca924feab3e55d} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface }]{screen}{ = {\ttfamily None}, }\item[{list\mbox{[}pygame.\+FRect\mbox{]} }]{blocking}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} }]{targets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a weapon loader with the specified parameters.
+
+Args:
+    screen (pygame.Surface): The surface on which the weapons will be drawn.
+    blocking (list[pygame.FRect]): The blocking objects to check against.
+    targets (Entity): The entities to check for line-of-sight.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a07c38ceed14c79604dffc42bf06c60ad}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!\_load\_spritesheet@{\_load\_spritesheet}}
+\index{\_load\_spritesheet@{\_load\_spritesheet}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{\_load\_spritesheet()}{\_load\_spritesheet()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a07c38ceed14c79604dffc42bf06c60ad} 
+ dict\mbox{[}str, pygame.\+Surface\mbox{]} src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+\_\+load\+\_\+spritesheet (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{image\+\_\+width}{, }\item[{int}]{image\+\_\+height}{, }\item[{int}]{final\+\_\+width}{, }\item[{int}]{final\+\_\+height}{, }\item[{str}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Loads and processes a spritesheet to extract individual sprites.
+
+Args:
+    image_width (int): The width of each sprite in the spritesheet.
+    image_height (int): The height of each sprite in the spritesheet.
+    final_width (int): The width to which each sprite should be scaled.
+    final_height (int): The height to which each sprite should be scaled.
+    path (str): The file path to the spritesheet image.
+
+Returns:
+    dict[str, pygame.Surface]: A dictionary mapping sprite indices to their corresponding scaled surface.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_aa0ca6e9c7c0db2e9c5b8b7448e727058}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!create\_guns@{create\_guns}}
+\index{create\_guns@{create\_guns}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{create\_guns()}{create\_guns()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_aa0ca6e9c7c0db2e9c5b8b7448e727058} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+create\+\_\+guns (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates instances of the weapons and assigns their properties.
+
+This method initializes the shotgun, pistol, and rocket launcher with their respective properties such as
+bullet speed, damage, maximum distance, and reload time. It also assigns the sound effects and sprites for
+each weapon.
+
+Attributes:
+    shotgun (Weapon): The shotgun instance.
+    glock (Weapon): The pistol instance.
+    rocket_launcher (Weapon): The rocket launcher instance.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ae2ddc7bf9bc863a2425e35a068342a69}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!Glock@{Glock}}
+\index{Glock@{Glock}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{Glock()}{Glock()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ae2ddc7bf9bc863a2425e35a068342a69} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+Glock (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a77d2aec6a179753771c94426164b2304}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!load\_sounds@{load\_sounds}}
+\index{load\_sounds@{load\_sounds}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{load\_sounds()}{load\_sounds()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a77d2aec6a179753771c94426164b2304} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+load\+\_\+sounds (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads and initializes sound effects for weapons with appropriate volume settings.
+
+This method loads sound files for various weapons from the specified paths,
+and sets their volumes based on the global and sound effects volume settings.
+
+Attributes:
+    shotgun_sound (pygame.mixer.Sound): Sound effect for the shotgun.
+    glock_sound (pygame.mixer.Sound): Sound effect for the pistol.
+    rocket_sound (pygame.mixer.Sound): Sound effect for the rocket launch.
+    rocket_explode (pygame.mixer.Sound): Sound effect for the rocket explosion.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_af3d9b083d66b3859013ab719eda34de8}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!Rocket\_Launcher@{Rocket\_Launcher}}
+\index{Rocket\_Launcher@{Rocket\_Launcher}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{Rocket\_Launcher()}{Rocket\_Launcher()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_af3d9b083d66b3859013ab719eda34de8} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+Rocket\+\_\+\+Launcher (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_aed8fb01d653f36c949036cc03cd26e59}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!Shotgun@{Shotgun}}
+\index{Shotgun@{Shotgun}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{Shotgun()}{Shotgun()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_aed8fb01d653f36c949036cc03cd26e59} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+Shotgun (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a826e915aea7082d73d14055b5c7f0d53}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!blocking@{blocking}}
+\index{blocking@{blocking}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{blocking}{blocking}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a826e915aea7082d73d14055b5c7f0d53} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+blocking = blocking}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3187226b801cb11448b707f060001958}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!bullet\_spritesheet@{bullet\_spritesheet}}
+\index{bullet\_spritesheet@{bullet\_spritesheet}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{bullet\_spritesheet}{bullet\_spritesheet}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3187226b801cb11448b707f060001958} 
+dict\mbox{[}str, pygame.\+Surface\mbox{]} src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+bullet\+\_\+spritesheet}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.\_load\_spritesheet(image\_width=3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ image\_height=6,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ final\_width=12,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ final\_height=24,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ path=self.bullet\_spritesheet\_path)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a4d50baedd61fc17f32e059f2a5abfdea}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!bullet\_spritesheet\_path@{bullet\_spritesheet\_path}}
+\index{bullet\_spritesheet\_path@{bullet\_spritesheet\_path}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{bullet\_spritesheet\_path}{bullet\_spritesheet\_path}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a4d50baedd61fc17f32e059f2a5abfdea} 
+str src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+bullet\+\_\+spritesheet\+\_\+path = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + "{}/assets/designs/Projectiles.\+png"{}}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3c6a5fb9a18fe95f3d892baf7cc2c2b5}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!glock@{glock}}
+\index{glock@{glock}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{glock}{glock}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3c6a5fb9a18fe95f3d892baf7cc2c2b5} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{Weapon}} src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+glock}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Weapon(weapon\_image=self.gun\_spritesheet[\textcolor{stringliteral}{"{}1"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullet\_image=self.bullet\_spritesheet[\textcolor{stringliteral}{"{}0"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.screen,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ position=pygame.Vector2(-\/300,\ -\/300),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.blocking,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ targets=self.targets,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_pickup\_multiplier=2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_shoot\_sound=self.glock\_sound,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ spread\_degree=2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullets=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullet\_speed=17,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reload\_time=0.3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ delta\_time=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ damage=4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\_distance=1200,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exploding=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (255,\ 0,\ 0),\ 2],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_throw\_speed=4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_throw\_decrease=0.03)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3002e88b76f789363c917b103ed08d88}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!glock\_sound@{glock\_sound}}
+\index{glock\_sound@{glock\_sound}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{glock\_sound}{glock\_sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3002e88b76f789363c917b103ed08d88} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+glock\+\_\+sound = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Pistol.\+wav"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a0cfc5a173add3fd2a977d790781ef20e}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!gun\_spritesheet@{gun\_spritesheet}}
+\index{gun\_spritesheet@{gun\_spritesheet}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{gun\_spritesheet}{gun\_spritesheet}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a0cfc5a173add3fd2a977d790781ef20e} 
+dict\mbox{[}str, pygame.\+Surface\mbox{]} src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+gun\+\_\+spritesheet}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.\_load\_spritesheet(image\_width=13,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ image\_height=53,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ final\_width=39,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ final\_height=159,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ path=self.gun\_spritesheet\_path)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ad56ca1521e1737ca508053706f4a6fa3}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!gun\_spritesheet\_path@{gun\_spritesheet\_path}}
+\index{gun\_spritesheet\_path@{gun\_spritesheet\_path}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{gun\_spritesheet\_path}{gun\_spritesheet\_path}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ad56ca1521e1737ca508053706f4a6fa3} 
+str src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+gun\+\_\+spritesheet\+\_\+path = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + "{}/assets/designs/Weapons.\+png"{}}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a71c8af238cb6d869d4df7ed3702ea740}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!rocket\_explode@{rocket\_explode}}
+\index{rocket\_explode@{rocket\_explode}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{rocket\_explode}{rocket\_explode}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a71c8af238cb6d869d4df7ed3702ea740} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+rocket\+\_\+explode = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Explosion.\+wav"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3b692cc9bca7b66ef6d5feb5ea60a001}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!rocket\_launcher@{rocket\_launcher}}
+\index{rocket\_launcher@{rocket\_launcher}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{rocket\_launcher}{rocket\_launcher}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a3b692cc9bca7b66ef6d5feb5ea60a001} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{Weapon}} src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+rocket\+\_\+launcher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Weapon(weapon\_image=self.gun\_spritesheet[\textcolor{stringliteral}{"{}2"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullet\_image=self.bullet\_spritesheet[\textcolor{stringliteral}{"{}1"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.screen,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ position=pygame.Vector2(-\/300,\ -\/300),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.blocking,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ targets=self.targets,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_pickup\_multiplier=2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_shoot\_sound=self.rocket\_sound,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ explode\_sound=self.rocket\_explode,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ spread\_degree=0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullets=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullet\_speed=10,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reload\_time=3.5,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ delta\_time=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ damage=30,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\_distance=800,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exploding=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ explosion\_radius=50,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exploding\_time=1.5,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (255,\ 0,\ 0),\ 2],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_throw\_speed=4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_throw\_decrease=0.03)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_af3800dee1a818ab7317bf50a865bb5fc}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!rocket\_sound@{rocket\_sound}}
+\index{rocket\_sound@{rocket\_sound}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{rocket\_sound}{rocket\_sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_af3800dee1a818ab7317bf50a865bb5fc} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+rocket\+\_\+sound = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Rocket.\+wav"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ab3e9f4e55acb0850a2c5d38cfe67691f}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!screen@{screen}}
+\index{screen@{screen}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_ab3e9f4e55acb0850a2c5d38cfe67691f} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+screen = screen}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a5043ced2e96104d9a9225826c6e84e83}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!shotgun@{shotgun}}
+\index{shotgun@{shotgun}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{shotgun}{shotgun}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a5043ced2e96104d9a9225826c6e84e83} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+shotgun}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Weapon(weapon\_image=self.gun\_spritesheet[\textcolor{stringliteral}{"{}0"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullet\_image=self.bullet\_spritesheet[\textcolor{stringliteral}{"{}2"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screen=self.screen,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ position=pygame.Vector2(-\/300,\ -\/300),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocking=self.blocking,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ targets=self.targets,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_pickup\_multiplier=2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_shoot\_sound=self.shotgun\_sound,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullets=10,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bullet\_speed=17,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reload\_time=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ delta\_time=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ spread\_degree=40,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ damage=2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\_distance=400,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exploding=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ show\_hitbox=[\textcolor{keyword}{False},\ (255,\ 0,\ 0),\ 2],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_throw\_speed=4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ weapon\_throw\_decrease=0.03)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a77ee5ca28c193ddeec38adb942486b0d}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!shotgun\_sound@{shotgun\_sound}}
+\index{shotgun\_sound@{shotgun\_sound}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{shotgun\_sound}{shotgun\_sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_a77ee5ca28c193ddeec38adb942486b0d} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+shotgun\+\_\+sound = pygame.\+mixer.\+Sound(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/sounds/Shotgun.\+wav"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_adbbaa7cf0743fc9e5b599fb441b54c32}\index{src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}!targets@{targets}}
+\index{targets@{targets}!src.modules.General.premade\_weapons.WeaponLoader@{src.modules.General.premade\_weapons.WeaponLoader}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1premade__weapons_1_1_weapon_loader_adbbaa7cf0743fc9e5b599fb441b54c32} 
+src.\+modules.\+General.\+premade\+\_\+weapons.\+Weapon\+Loader.\+targets = targets}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+General/\mbox{\hyperlink{premade__weapons_8py}{premade\+\_\+weapons.\+py}}\end{DoxyCompactItemize}

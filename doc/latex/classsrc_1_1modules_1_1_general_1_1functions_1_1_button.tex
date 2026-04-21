@@ -1,0 +1,150 @@
+\doxysection{src.\+modules.\+General.\+functions.\+Button Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{}\label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a1ef308603ee0af39a6f449b5582f3290}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a29e75f94dc94e1bae093f3acd8ecf6ec}{image}}=None, str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_ad54f5b5ee49902c0605e81ef5c7d7345}{text}}="{}"{}, int center\+\_\+x=0, int center\+\_\+y=0, int width=0, int height=0, int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_af0b03581d24a42cdbf7ac46ccd2daee2}{border\+\_\+radius}}=10, callable \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a15bea88cd4da0813b335090020b305d1}{callback}}=None, pygame.\+font.\+Font \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a951a4117112ef4d2c394c3e9f316e1e1}{font}}=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a5ec6932576a504cc62f40df88b91135b}{draw}} (self, pygame.\+Surface screen)
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a9a37e29405f30121175e77a2cc142f3d}{handle\+\_\+event}} (self, event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a29e75f94dc94e1bae093f3acd8ecf6ec}{image}} = image
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_ad54f5b5ee49902c0605e81ef5c7d7345}{text}} = text
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a1acc643674186573f7107ac629475801}{rect}} = self.\+image.\+get\+\_\+rect() if \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a29e75f94dc94e1bae093f3acd8ecf6ec}{image}} else pygame.\+Rect(center\+\_\+x, center\+\_\+y, width, height)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_af0b03581d24a42cdbf7ac46ccd2daee2}{border\+\_\+radius}} = border\+\_\+radius
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a15bea88cd4da0813b335090020b305d1}{callback}} = callback
+\item 
+tuple \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a37035200815bf367b4fc6e85e0e965f4}{color}} = (50, 50, 50)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a951a4117112ef4d2c394c3e9f316e1e1}{font}} = font if font else pygame.\+font.\+Sys\+Font(None, 48)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class representing a button.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a1ef308603ee0af39a6f449b5582f3290}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a1ef308603ee0af39a6f449b5582f3290} 
+src.\+modules.\+General.\+functions.\+Button.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface }]{image}{ = {\ttfamily None}, }\item[{str }]{text}{ = {\ttfamily "{}"{}}, }\item[{int }]{center\+\_\+x}{ = {\ttfamily 0}, }\item[{int }]{center\+\_\+y}{ = {\ttfamily 0}, }\item[{int }]{width}{ = {\ttfamily 0}, }\item[{int }]{height}{ = {\ttfamily 0}, }\item[{int }]{border\+\_\+radius}{ = {\ttfamily 10}, }\item[{callable }]{callback}{ = {\ttfamily None}, }\item[{pygame.\+font.\+Font }]{font}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a Button instance with the specified attributes.
+
+Args:
+    image (pygame.Surface, optional): The image to display on the button. Defaults to None.
+    text (str, optional): The text to display on the button. Defaults to an empty string.
+    center_x (int, optional): The x-coordinate of the button's center. Defaults to 0.
+    center_y (int, optional): The y-coordinate of the button's center. Defaults to 0.
+    width (int, optional): The width of the button. Defaults to 0.
+    height (int, optional): The height of the button. Defaults to 0.
+    border_radius (int, optional): The radius of the button's border corners. Defaults to 10.
+    callback (callable, optional): The function to call when the button is pressed. Defaults to None.
+    font (pygame.font.Font, optional): The font to use for rendering text. Defaults to None, which uses a default font.
+
+Attributes:
+    image (pygame.Surface): The image displayed on the button.
+    text (str): The text displayed on the button.
+    rect (pygame.Rect): The rectangle defining the button's position and size.
+    border_radius (int): The radius of the button's border corners.
+    callback (callable): The function to call when the button is pressed.
+    color (tuple[int, int, int]): The color of the button.
+    font (pygame.font.Font): The font used for rendering text on the button.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a5ec6932576a504cc62f40df88b91135b}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!draw@{draw}}
+\index{draw@{draw}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a5ec6932576a504cc62f40df88b91135b} 
+src.\+modules.\+General.\+functions.\+Button.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{screen}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws the button on the given screen surface.
+
+If an image is provided for the button, it will be blitted onto the screen
+at the button's top-left corner. Otherwise, a rectangle with the button's
+color and border radius will be drawn. The button's text is rendered and
+centered within the rectangle.
+
+Args:
+    screen (pygame.Surface): The surface on which to draw the button.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a9a37e29405f30121175e77a2cc142f3d}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!handle\_event@{handle\_event}}
+\index{handle\_event@{handle\_event}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{handle\_event()}{handle\_event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a9a37e29405f30121175e77a2cc142f3d} 
+ bool src.\+modules.\+General.\+functions.\+Button.\+handle\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles events related to the button.
+
+This method updates the button's color when the mouse moves over it and
+triggers the button's callback function if the button is clicked.
+
+Args:
+    event (pygame.event.Event): The event to be processed.
+
+Returns:
+    bool: True if the button was clicked and a callback was executed,
+        otherwise False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_af0b03581d24a42cdbf7ac46ccd2daee2}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!border\_radius@{border\_radius}}
+\index{border\_radius@{border\_radius}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{border\_radius}{border\_radius}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_af0b03581d24a42cdbf7ac46ccd2daee2} 
+src.\+modules.\+General.\+functions.\+Button.\+border\+\_\+radius = border\+\_\+radius}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a15bea88cd4da0813b335090020b305d1}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!callback@{callback}}
+\index{callback@{callback}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a15bea88cd4da0813b335090020b305d1} 
+src.\+modules.\+General.\+functions.\+Button.\+callback = callback}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a37035200815bf367b4fc6e85e0e965f4}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!color@{color}}
+\index{color@{color}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a37035200815bf367b4fc6e85e0e965f4} 
+src.\+modules.\+General.\+functions.\+Button.\+color = (50, 50, 50)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a951a4117112ef4d2c394c3e9f316e1e1}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!font@{font}}
+\index{font@{font}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a951a4117112ef4d2c394c3e9f316e1e1} 
+src.\+modules.\+General.\+functions.\+Button.\+font = font if font else pygame.\+font.\+Sys\+Font(None, 48)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a29e75f94dc94e1bae093f3acd8ecf6ec}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!image@{image}}
+\index{image@{image}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a29e75f94dc94e1bae093f3acd8ecf6ec} 
+src.\+modules.\+General.\+functions.\+Button.\+image = image}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a1acc643674186573f7107ac629475801}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!rect@{rect}}
+\index{rect@{rect}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a1acc643674186573f7107ac629475801} 
+src.\+modules.\+General.\+functions.\+Button.\+rect = self.\+image.\+get\+\_\+rect() if \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_a29e75f94dc94e1bae093f3acd8ecf6ec}{image}} else pygame.\+Rect(center\+\_\+x, center\+\_\+y, width, height)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_ad54f5b5ee49902c0605e81ef5c7d7345}\index{src.modules.General.functions.Button@{src.modules.General.functions.Button}!text@{text}}
+\index{text@{text}!src.modules.General.functions.Button@{src.modules.General.functions.Button}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_button_ad54f5b5ee49902c0605e81ef5c7d7345} 
+src.\+modules.\+General.\+functions.\+Button.\+text = text}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+General/\mbox{\hyperlink{functions_8py}{functions.\+py}}\end{DoxyCompactItemize}

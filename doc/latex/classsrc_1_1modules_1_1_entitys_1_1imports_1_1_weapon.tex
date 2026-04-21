@@ -1,0 +1,526 @@
+\doxysection{src.\+modules.\+Entitys.\+imports.\+Weapon Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{}\label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+Inheritance diagram for src.\+modules.\+Entitys.\+imports.\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a66391b0c89a47be3cce060e078e40620}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ade5755ebf347cb977321a15b68483970}{weapon\+\_\+image}}, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a71073b12bc7de8cb8229461ce6eac01d}{bullet\+\_\+image}}, pygame.\+surface.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{screen}}, pygame.\+Vector2 position, list\mbox{[}pygame.\+FRect\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{blocking}}, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}\mbox{[}\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}}\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8213d51247652851ee983f43bf69feec}{targets}}, pygame.\+mixer.\+Sound \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8ce672f04b5546a732c251223400bfe2}{weapon\+\_\+shoot\+\_\+sound}}, pygame.\+mixer.\+Sound \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3708e5ac713d0efb83445a5ffba47052}{explode\+\_\+sound}}=None, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afb96a68c4d85806b572677b0141c3f45}{sticking\+\_\+to}}=None, float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6b88ef15cd2a8fb3f0da4e02b3e3a2d7}{weapon\+\_\+pickup\+\_\+multiplier}}=2, \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0a64f0cec3f7a4d0ca1c3d68732a15b4}{rotate\+\_\+angle}}=0, \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a599dbfe76262c3f2e95a167b034885fc}{spread\+\_\+degree}}=30, \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7b593efd5bb32ce87bd007e560a85530}{bullets}}=1, \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a27fe026ab443c712b70cc1e9feae1d4e}{bullet\+\_\+speed}}=10, \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a1087dc4678648398563c754f9d051fc2}{reload\+\_\+time}}=0, float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{delta\+\_\+time}}=1, float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{damage}}=10, int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a9887e8a0cd64dfec7bdb87e4c02116fd}{max\+\_\+distance}}=1000, bool \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0efe0c2ab040275ccba4c32108bf0790}{exploding}}=True, float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2e97d4e7418624a2014f14b8bcc3d278}{exploding\+\_\+time}}=1.\+5, int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a5a894689a39948367b8c3e64aaeed585}{explosion\+\_\+radius}}=20, \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a94a572a99f6059d5385f16be9f7f219e}{bullet\+\_\+size}}=(10, 10), float weapon\+\_\+throw\+\_\+speed=2, float weapon\+\_\+throw\+\_\+decrease=0.\+01, list\mbox{[}bool,(int, int, int), int\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{show\+\_\+hitbox}}=\mbox{[}False,(0, 0, 0), 2\mbox{]})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8e29488d881301a49390b8b11ac5953d}{initiate\+\_\+drawing}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_adc3231f891519b53b63613549efdb83d}{shoot}} (self, int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{x}}, int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon}{y}}, bool show\+\_\+debug=False)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a74897ad80104ecf0daab84b0bc9f9d50}{draw}} (self, surface=None)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_acf971b2c8f11b4468bc0bf22539d4125}{movement}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3c61240dca7bfecb350869cb4f86b5ed}{throw}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2b3c8f38fff60bce8f34a230c85b52f0}{update}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ab717205b23016a5d25f7cedcb0696f12}{update\+\_\+all\+\_\+positions}} (self, pygame.\+Vector2\texorpdfstring{$\vert$}{|}tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}int, int\mbox{]} position)
+\item 
+"{}Weapon"{} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a242221051cd8380617b273193536c4f3}{copy}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{src.\+modules.\+General.\+types.\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a50048f47aa26a83cc4318c3d082287cb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a718a64aa916fa6b2f2736fd53919ec4f}{pickup\+\_\+weapon}} (self, list guns, new\+\_\+targets=\mbox{[}$\,$\mbox{]})
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a93ba13320da35438a2205cd86de6d6a7}{drop\+\_\+weapon}} (self, pygame.\+Vector2 position)
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a9c0c953d02de92e58748522c99faba0b}{holding\+\_\+weapon}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a27180a9a570160fc2007c61599935308}{damage}} (self, int damage, pygame.\+Vector2 direction)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a7deb41ccdf74660088014af4bc4c042d}{All\+\_\+\+Entities}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_ab192373894debd7ae44b044f53a882d5}{All}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_ac110abf0fb4a33c42c384464c8e6ab83}{clear\+\_\+cls}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_abeb984f5bb6601e9de4dec3c04138d10}{hitbox\+\_\+check}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a99820ff36057e5020801d9647a9dcd79}{alive}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_aed56f34f46c0d53c4b9d22738c8f1df9}{LOS}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a7afb7bf0a38562c27bef9e905ba1f1b2}{update\+\_\+all\+\_\+delta\+\_\+times}} (self, float \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a117e22ff4a3bcf0cf38dc056ccbd3f47}{delta\+\_\+time}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7efd073b5152b75eafe3ea7073cf1129}{throwing}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afb96a68c4d85806b572677b0141c3f45}{sticking\+\_\+to}}
+\item 
+pygame.\+Vector2 \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afd5d91d6398d1744cce79b86c526fbc1}{offset}} = pygame.\+Vector2(self.\+sticking\+\_\+to.\+rect.\+topright) -\/ self.\+sticking\+\_\+to.\+POSITION
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0a64f0cec3f7a4d0ca1c3d68732a15b4}{rotate\+\_\+angle}} = rotate\+\_\+angle
+\item 
+pygame.\+mixer.\+Sound \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8ce672f04b5546a732c251223400bfe2}{weapon\+\_\+shoot\+\_\+sound}} = weapon\+\_\+shoot\+\_\+sound
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a71073b12bc7de8cb8229461ce6eac01d}{bullet\+\_\+image}} = bullet\+\_\+image
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6b88ef15cd2a8fb3f0da4e02b3e3a2d7}{weapon\+\_\+pickup\+\_\+multiplier}} = weapon\+\_\+pickup\+\_\+multiplier
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ade5755ebf347cb977321a15b68483970}{weapon\+\_\+image}} = weapon\+\_\+image
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}\mbox{[}\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}}\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8213d51247652851ee983f43bf69feec}{targets}} = targets
+\item 
+pygame.\+mixer.\+Sound \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3708e5ac713d0efb83445a5ffba47052}{explode\+\_\+sound}} = explode\+\_\+sound
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0efe0c2ab040275ccba4c32108bf0790}{exploding}} = exploding
+\item 
+tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a5a894689a39948367b8c3e64aaeed585}{explosion\+\_\+radius}} = explosion\+\_\+radius
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2e97d4e7418624a2014f14b8bcc3d278}{exploding\+\_\+time}} = exploding\+\_\+time
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a599dbfe76262c3f2e95a167b034885fc}{spread\+\_\+degree}} = spread\+\_\+degree
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7b593efd5bb32ce87bd007e560a85530}{bullets}} = bullets
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a27fe026ab443c712b70cc1e9feae1d4e}{bullet\+\_\+speed}} = bullet\+\_\+speed
+\item 
+tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a94a572a99f6059d5385f16be9f7f219e}{bullet\+\_\+size}} = bullet\+\_\+size
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a9887e8a0cd64dfec7bdb87e4c02116fd}{max\+\_\+distance}} = max\+\_\+distance
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a4b3f85bf03d8a0fc7c606f6198831b71}{throw\+\_\+speed}} = weapon\+\_\+throw\+\_\+speed
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ad58a1195cb6541a1f095b48c846a9c93}{throw\+\_\+decrease}} = weapon\+\_\+throw\+\_\+decrease
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a1087dc4678648398563c754f9d051fc2}{reload\+\_\+time}} = reload\+\_\+time
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a05d1ab5f2bf2d5f3fc89e7b6ca80ecc3}{last\+\_\+shot}} = pygame.\+time.\+get\+\_\+ticks()
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}} \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ab71d99fb91b4c22d15418730d4ed733e}{shot\+\_\+bullets}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}()
+\item 
+pygame.\+FRect \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a80b12d40e335b5f5a4149a9d90cfac6f}{pickup\+\_\+rect}} = self.\+rect.\+copy()
+\item 
+pygame.\+Vector2 \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_addd86038d8e084a779c57b79e62e2c69}{throwing\+\_\+to}}
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6248f9d98f62865ed98d9457f3f81cbc}{first\+\_\+call}}
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a253fdf29c31d65c482f64e2ec6b2be68}{current\+\_\+speed}} = self.\+POSITION.\+copy()
+\item 
+pygame.\+Vector2 \mbox{\hyperlink{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a50c34929058ea0a39581bbd595e72a70}{normalized\+\_\+throw}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{src.\+modules.\+General.\+types.\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a667eb2a3c1427cc213b8eae3d76895f4}{cls}} = cls
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_ab6ba06dbb52590f3acd24776e3bfe8a4}{all}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}()
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_abae772993415f8d61a6e4577edf63454}{x}}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a397d31313a7803343c4ba2aec793d6c9}{y}}
+\item 
+pygame.\+Vector2 \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a3d2386ac7f4d1a5161055c1e3aa2389c}{POSITION}}
+\item 
+pygame.\+FRect\texorpdfstring{$\vert$}{|}list\mbox{[}pygame.\+FRect\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_ae9409a85a0179cd38a915fc194f644eb}{blocking}}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a4a7276a486459f3ecefb3f8ca4fa666d}{health}}
+\item 
+list\mbox{[}bool,(int, int, int), int\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a34b7ff15b5ca97c562e6a3513a228d4c}{show\+\_\+hitbox}}
+\item 
+tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}int, int\mbox{]} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a07df851f1932ec77f414071dc224ca6e}{player\+\_\+scale}}
+\item 
+pygame.\+surface.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a56c8dd5f903d1251535ba6b386092ec5}{screen}}
+\item 
+float \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a117e22ff4a3bcf0cf38dc056ccbd3f47}{delta\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a888472d9c81014918aeeddf5a863922a}{movement\+\_\+speed}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a70cf535861ec95ecea57a3d696a3e655}{gun}} = None
+\item 
+pygame.\+FRect \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a372e320c21554cfa8238147045757e46}{rect}}
+\item 
+pygame.\+Mask \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a6a06bc787131405d88a78246cdfbed09}{mask}}
+\item 
+pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_acc0668c3a1bcc97e465b2a6736541878}{image}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a66391b0c89a47be3cce060e078e40620}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a66391b0c89a47be3cce060e078e40620} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{weapon\+\_\+image}{, }\item[{pygame.\+Surface}]{bullet\+\_\+image}{, }\item[{pygame.\+surface.\+Surface}]{screen}{, }\item[{pygame.\+Vector2}]{position}{, }\item[{list\mbox{[}pygame.\+FRect\mbox{]}}]{blocking}{, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}\mbox{[}\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}}\mbox{]}}]{targets}{, }\item[{pygame.\+mixer.\+Sound}]{weapon\+\_\+shoot\+\_\+sound}{, }\item[{pygame.\+mixer.\+Sound }]{explode\+\_\+sound}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} }]{sticking\+\_\+to}{ = {\ttfamily None}, }\item[{float }]{weapon\+\_\+pickup\+\_\+multiplier}{ = {\ttfamily 2}, }\item[{}]{rotate\+\_\+angle}{ = {\ttfamily 0}, }\item[{}]{spread\+\_\+degree}{ = {\ttfamily 30}, }\item[{}]{bullets}{ = {\ttfamily 1}, }\item[{}]{bullet\+\_\+speed}{ = {\ttfamily 10}, }\item[{}]{reload\+\_\+time}{ = {\ttfamily 0}, }\item[{float }]{delta\+\_\+time}{ = {\ttfamily 1}, }\item[{float }]{damage}{ = {\ttfamily 10}, }\item[{int }]{max\+\_\+distance}{ = {\ttfamily 1000}, }\item[{bool }]{exploding}{ = {\ttfamily True}, }\item[{float }]{exploding\+\_\+time}{ = {\ttfamily 1.5}, }\item[{int }]{explosion\+\_\+radius}{ = {\ttfamily 20}, }\item[{}]{bullet\+\_\+size}{ = {\ttfamily (10,~10)}, }\item[{float }]{weapon\+\_\+throw\+\_\+speed}{ = {\ttfamily 2}, }\item[{float }]{weapon\+\_\+throw\+\_\+decrease}{ = {\ttfamily 0.01}, }\item[{list\mbox{[}bool, (int, int, int), int\mbox{]} }]{show\+\_\+hitbox}{ = {\ttfamily \mbox{[}False,~(0,~0,~0),~2\mbox{]}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a weapon entity with the specified parameters.
+
+Args:
+    weapon_image_path (str): The file path to the image to be loaded.
+    bullet_image_path (str): The file path to the image to be loaded.
+    screen (pygame.surface.Surface): The surface on which to draw the weapon.
+    position (pygame.Vector2): The position where the image will be drawn.
+    blocking (list[pygame.FRect]): The blocking objects to check against.
+    targets (Groups[Entity]): The entities to check for line-of-sight.
+    sticking_to (Entity, optional): The entity to which the weapon is attached. Defaults to None.
+    spread_degree (int, optional): The degree of spread for the weapon. Defaults to 30.
+    bullets (int, optional): The number of bullets to fire. Defaults to 1.
+    bullet_speed (int, optional): The speed of the bullets. Defaults to 10.
+    damage (float, optional): The damage the bullets will do. Defaults to 10.
+    max_distance (int, optional): The maximum distance the bullets will travel. Defaults to 1000.
+    exploding (bool, optional): Whether the bullets will explode upon hitting a target. Defaults to True.
+    exploding_time (float, optional): The time the bullets will take to explode. Defaults to 1.5.
+    explosion_radius (int, optional): The radius of the explosion. Defaults to 20.
+    bullet_size (tuple[int, int], optional): The size of the bullets. Defaults to (10, 10).
+    weapon_size (tuple[int, int], optional): The size of the weapon. Defaults to (100, 100).
+    weapon_throw_speed (float, optional): The speed at which the weapon is thrown. Defaults to 2.
+    weapon_throw_decrease (float, optional): The rate at which the weapon throw speed decreases. Defaults to 0.01.
+    show_hitbox (list[bool, (int, int, int), int], optional): Whether to display the hitbox of the weapon. Defaults to [False, (0, 0, 0), 2].
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a242221051cd8380617b273193536c4f3}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!copy@{copy}}
+\index{copy@{copy}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a242221051cd8380617b273193536c4f3} 
+ "{}Weapon"{} src.\+modules.\+Entitys.\+imports.\+Weapon.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a deep copy of the Weapon instance, excluding transient runtime state like shot bullets.
+
+Returns:
+    Weapon: A new instance with the same configuration and position.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a74897ad80104ecf0daab84b0bc9f9d50}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!draw@{draw}}
+\index{draw@{draw}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a74897ad80104ecf0daab84b0bc9f9d50} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{surface}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws the player's image on the given surface.
+
+This method blits the player's image onto the provided surface
+at the player's current position. If the player's hitbox is set to be
+shown, a red rectangle will be drawn around the image to indicate the
+hitbox.
+
+Args:
+    surface (pygame.surface.Surface, optional): The surface on which the player's
+    image will be drawn. Defaults to None.
+
+Raises:
+    TypeError: If `surface` is not a `pygame.surface.Surface` instance.
+
+Returns:
+    None:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_a62c10ceb30ea5283a38bfe2da65ace0e}{src.\+modules.\+General.\+types.\+Entity}}.
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8e29488d881301a49390b8b11ac5953d}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!initiate\_drawing@{initiate\_drawing}}
+\index{initiate\_drawing@{initiate\_drawing}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{initiate\_drawing()}{initiate\_drawing()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8e29488d881301a49390b8b11ac5953d} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+initiate\+\_\+drawing (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the drawing of the player with specified parameters.
+
+Args:
+    image_path (str): The file path to the image to be loaded.
+    image_size (tuple[int, int]): The size of the image.
+
+Raises:
+    TypeError: If `image_path` is not a string.
+    TypeError: If `image_size` is not a tuple of two integers.
+
+Attributes:
+    image (pygame.surface.Surface): The loaded and scaled image surface.
+    rect (pygame.FRect): The rectangle representing the image's dimensions and position.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_ae8d5876e5ed547753cee1e360886c232}{src.\+modules.\+General.\+types.\+Entity}}.
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_acf971b2c8f11b4468bc0bf22539d4125}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!movement@{movement}}
+\index{movement@{movement}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{movement()}{movement()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_acf971b2c8f11b4468bc0bf22539d4125} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+movement (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles the movement of the player.
+
+If the player is sticking to another entity, this method will
+adjust the player's position to be at the midright of that entity's
+rect.
+
+If the player is throwing a pickup, this method will call the
+`throw` method to handle the throwing logic.
+
+Returns:
+    None:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_adb4b41d2409635dff0c9c0796e31fe47}{src.\+modules.\+General.\+types.\+Entity}}.
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_adc3231f891519b53b63613549efdb83d}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!shoot@{shoot}}
+\index{shoot@{shoot}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_adc3231f891519b53b63613549efdb83d} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+shoot (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{bool }]{show\+\_\+debug}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fires bullets towards a specified target position with a spread.
+
+Args:
+    x (int): The x-coordinate of the target position.
+    y (int): The y-coordinate of the target position.
+    show_debug (bool, optional): Whether to show debugging visuals for the bullet spread. Defaults to False.
+
+This function calculates a spread area around the target position and fires multiple bullets
+with random trajectories within this spread. The bullets are added to the shot_bullets group
+and will interact with the blocking objects and targets specified.
+
+The spread is visualized with red lines when `show_debug` is True.
+Returns:
+    None:
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3c61240dca7bfecb350869cb4f86b5ed}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!throw@{throw}}
+\index{throw@{throw}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{throw()}{throw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3c61240dca7bfecb350869cb4f86b5ed} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+throw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles the logic for throwing an object to a target position.
+
+This method calculates and updates the position of the object being
+thrown based on its speed and direction. It also handles collisions
+with blocking objects and reflects the direction accordingly. If the
+object's speed decreases to zero or below, it performs cleanup operations.
+
+Attributes:
+    throwing (bool): Indicates if the object is currently being thrown.
+    throwing_to (pygame.Vector2): The target position for the throw.
+    first_call (bool): Flag for initializing the throw logic.
+    current_speed (float): The current speed of the thrown object.
+    normalized_throw (pygame.Vector2): The normalized direction vector
+        for the throw.
+
+Raises:
+    AttributeError: If there are issues accessing object attributes.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2b3c8f38fff60bce8f34a230c85b52f0}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!update@{update}}
+\index{update@{update}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2b3c8f38fff60bce8f34a230c85b52f0} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the state of the entity.
+
+This method should be called once per frame to update the entity's state and redraw it on the screen.
+
+Calls the `movement` method to update the entity's position, then calls the `draw` method to redraw the entity at its new position.
+
+If the entity has shot bullets, this method will call the `update` method on the `shot_bullets` group to update the state of the bullets.
+
+Returns:
+    None:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity_af4d035ad9b82a6ec26e770838eb8d40f}{src.\+modules.\+General.\+types.\+Entity}}.
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ab717205b23016a5d25f7cedcb0696f12}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!update\_all\_positions@{update\_all\_positions}}
+\index{update\_all\_positions@{update\_all\_positions}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{update\_all\_positions()}{update\_all\_positions()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ab717205b23016a5d25f7cedcb0696f12} 
+ None src.\+modules.\+Entitys.\+imports.\+Weapon.\+update\+\_\+all\+\_\+positions (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Vector2 \texorpdfstring{$\vert$}{|} tuple\mbox{[}int, int\mbox{]} \texorpdfstring{$\vert$}{|} list\mbox{[}int, int\mbox{]}}]{position}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the position of the Entity's rect and POSITION attribute.
+
+Args:
+    position (pygame.Vector2 | tuple[int, int] | list[int, int]): The new position to be set.
+
+Returns:
+    None:
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a71073b12bc7de8cb8229461ce6eac01d}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!bullet\_image@{bullet\_image}}
+\index{bullet\_image@{bullet\_image}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{bullet\_image}{bullet\_image}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a71073b12bc7de8cb8229461ce6eac01d} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+bullet\+\_\+image = bullet\+\_\+image}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a94a572a99f6059d5385f16be9f7f219e}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!bullet\_size@{bullet\_size}}
+\index{bullet\_size@{bullet\_size}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{bullet\_size}{bullet\_size}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a94a572a99f6059d5385f16be9f7f219e} 
+tuple\mbox{[}int, int\mbox{]} src.\+modules.\+Entitys.\+imports.\+Weapon.\+bullet\+\_\+size = bullet\+\_\+size}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a27fe026ab443c712b70cc1e9feae1d4e}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!bullet\_speed@{bullet\_speed}}
+\index{bullet\_speed@{bullet\_speed}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{bullet\_speed}{bullet\_speed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a27fe026ab443c712b70cc1e9feae1d4e} 
+int src.\+modules.\+Entitys.\+imports.\+Weapon.\+bullet\+\_\+speed = bullet\+\_\+speed}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7b593efd5bb32ce87bd007e560a85530}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!bullets@{bullets}}
+\index{bullets@{bullets}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{bullets}{bullets}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7b593efd5bb32ce87bd007e560a85530} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+bullets = bullets}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a253fdf29c31d65c482f64e2ec6b2be68}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!current\_speed@{current\_speed}}
+\index{current\_speed@{current\_speed}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{current\_speed}{current\_speed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a253fdf29c31d65c482f64e2ec6b2be68} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+current\+\_\+speed = self.\+POSITION.\+copy()}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3708e5ac713d0efb83445a5ffba47052}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!explode\_sound@{explode\_sound}}
+\index{explode\_sound@{explode\_sound}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{explode\_sound}{explode\_sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a3708e5ac713d0efb83445a5ffba47052} 
+pygame.\+mixer.\+Sound src.\+modules.\+Entitys.\+imports.\+Weapon.\+explode\+\_\+sound = explode\+\_\+sound}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0efe0c2ab040275ccba4c32108bf0790}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!exploding@{exploding}}
+\index{exploding@{exploding}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{exploding}{exploding}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0efe0c2ab040275ccba4c32108bf0790} 
+bool src.\+modules.\+Entitys.\+imports.\+Weapon.\+exploding = exploding}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2e97d4e7418624a2014f14b8bcc3d278}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!exploding\_time@{exploding\_time}}
+\index{exploding\_time@{exploding\_time}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{exploding\_time}{exploding\_time}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a2e97d4e7418624a2014f14b8bcc3d278} 
+float src.\+modules.\+Entitys.\+imports.\+Weapon.\+exploding\+\_\+time = exploding\+\_\+time}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a5a894689a39948367b8c3e64aaeed585}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!explosion\_radius@{explosion\_radius}}
+\index{explosion\_radius@{explosion\_radius}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{explosion\_radius}{explosion\_radius}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a5a894689a39948367b8c3e64aaeed585} 
+tuple\mbox{[}int, int\mbox{]} src.\+modules.\+Entitys.\+imports.\+Weapon.\+explosion\+\_\+radius = explosion\+\_\+radius}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6248f9d98f62865ed98d9457f3f81cbc}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!first\_call@{first\_call}}
+\index{first\_call@{first\_call}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{first\_call}{first\_call}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6248f9d98f62865ed98d9457f3f81cbc} 
+bool src.\+modules.\+Entitys.\+imports.\+Weapon.\+first\+\_\+call}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a05d1ab5f2bf2d5f3fc89e7b6ca80ecc3}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!last\_shot@{last\_shot}}
+\index{last\_shot@{last\_shot}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{last\_shot}{last\_shot}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a05d1ab5f2bf2d5f3fc89e7b6ca80ecc3} 
+int src.\+modules.\+Entitys.\+imports.\+Weapon.\+last\+\_\+shot = pygame.\+time.\+get\+\_\+ticks()}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a9887e8a0cd64dfec7bdb87e4c02116fd}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!max\_distance@{max\_distance}}
+\index{max\_distance@{max\_distance}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{max\_distance}{max\_distance}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a9887e8a0cd64dfec7bdb87e4c02116fd} 
+int src.\+modules.\+Entitys.\+imports.\+Weapon.\+max\+\_\+distance = max\+\_\+distance}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a50c34929058ea0a39581bbd595e72a70}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!normalized\_throw@{normalized\_throw}}
+\index{normalized\_throw@{normalized\_throw}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{normalized\_throw}{normalized\_throw}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a50c34929058ea0a39581bbd595e72a70} 
+pygame.\+Vector2 src.\+modules.\+Entitys.\+imports.\+Weapon.\+normalized\+\_\+throw}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afd5d91d6398d1744cce79b86c526fbc1}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!offset@{offset}}
+\index{offset@{offset}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afd5d91d6398d1744cce79b86c526fbc1} 
+pygame.\+Vector2 src.\+modules.\+Entitys.\+imports.\+Weapon.\+offset = pygame.\+Vector2(self.\+sticking\+\_\+to.\+rect.\+topright) -\/ self.\+sticking\+\_\+to.\+POSITION}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a80b12d40e335b5f5a4149a9d90cfac6f}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!pickup\_rect@{pickup\_rect}}
+\index{pickup\_rect@{pickup\_rect}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{pickup\_rect}{pickup\_rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a80b12d40e335b5f5a4149a9d90cfac6f} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+pickup\+\_\+rect = self.\+rect.\+copy()}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a1087dc4678648398563c754f9d051fc2}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!reload\_time@{reload\_time}}
+\index{reload\_time@{reload\_time}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{reload\_time}{reload\_time}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a1087dc4678648398563c754f9d051fc2} 
+float src.\+modules.\+Entitys.\+imports.\+Weapon.\+reload\+\_\+time = reload\+\_\+time}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0a64f0cec3f7a4d0ca1c3d68732a15b4}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!rotate\_angle@{rotate\_angle}}
+\index{rotate\_angle@{rotate\_angle}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{rotate\_angle}{rotate\_angle}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a0a64f0cec3f7a4d0ca1c3d68732a15b4} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+rotate\+\_\+angle = rotate\+\_\+angle}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ab71d99fb91b4c22d15418730d4ed733e}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!shot\_bullets@{shot\_bullets}}
+\index{shot\_bullets@{shot\_bullets}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{shot\_bullets}{shot\_bullets}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ab71d99fb91b4c22d15418730d4ed733e} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}} src.\+modules.\+Entitys.\+imports.\+Weapon.\+shot\+\_\+bullets = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}()}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a599dbfe76262c3f2e95a167b034885fc}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!spread\_degree@{spread\_degree}}
+\index{spread\_degree@{spread\_degree}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{spread\_degree}{spread\_degree}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a599dbfe76262c3f2e95a167b034885fc} 
+int src.\+modules.\+Entitys.\+imports.\+Weapon.\+spread\+\_\+degree = spread\+\_\+degree}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afb96a68c4d85806b572677b0141c3f45}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!sticking\_to@{sticking\_to}}
+\index{sticking\_to@{sticking\_to}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{sticking\_to}{sticking\_to}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_afb96a68c4d85806b572677b0141c3f45} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} src.\+modules.\+Entitys.\+imports.\+Weapon.\+sticking\+\_\+to}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8213d51247652851ee983f43bf69feec}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!targets@{targets}}
+\index{targets@{targets}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8213d51247652851ee983f43bf69feec} 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_groups}{Groups}}\mbox{[}\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}}\mbox{]} src.\+modules.\+Entitys.\+imports.\+Weapon.\+targets = targets}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ad58a1195cb6541a1f095b48c846a9c93}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!throw\_decrease@{throw\_decrease}}
+\index{throw\_decrease@{throw\_decrease}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{throw\_decrease}{throw\_decrease}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ad58a1195cb6541a1f095b48c846a9c93} 
+float src.\+modules.\+Entitys.\+imports.\+Weapon.\+throw\+\_\+decrease = weapon\+\_\+throw\+\_\+decrease}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a4b3f85bf03d8a0fc7c606f6198831b71}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!throw\_speed@{throw\_speed}}
+\index{throw\_speed@{throw\_speed}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{throw\_speed}{throw\_speed}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a4b3f85bf03d8a0fc7c606f6198831b71} 
+float src.\+modules.\+Entitys.\+imports.\+Weapon.\+throw\+\_\+speed = weapon\+\_\+throw\+\_\+speed}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7efd073b5152b75eafe3ea7073cf1129}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!throwing@{throwing}}
+\index{throwing@{throwing}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{throwing}{throwing}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a7efd073b5152b75eafe3ea7073cf1129} 
+bool src.\+modules.\+Entitys.\+imports.\+Weapon.\+throwing = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_addd86038d8e084a779c57b79e62e2c69}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!throwing\_to@{throwing\_to}}
+\index{throwing\_to@{throwing\_to}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{throwing\_to}{throwing\_to}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_addd86038d8e084a779c57b79e62e2c69} 
+pygame.\+Vector2 src.\+modules.\+Entitys.\+imports.\+Weapon.\+throwing\+\_\+to}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ade5755ebf347cb977321a15b68483970}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!weapon\_image@{weapon\_image}}
+\index{weapon\_image@{weapon\_image}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{weapon\_image}{weapon\_image}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_ade5755ebf347cb977321a15b68483970} 
+src.\+modules.\+Entitys.\+imports.\+Weapon.\+weapon\+\_\+image = weapon\+\_\+image}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6b88ef15cd2a8fb3f0da4e02b3e3a2d7}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!weapon\_pickup\_multiplier@{weapon\_pickup\_multiplier}}
+\index{weapon\_pickup\_multiplier@{weapon\_pickup\_multiplier}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{weapon\_pickup\_multiplier}{weapon\_pickup\_multiplier}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a6b88ef15cd2a8fb3f0da4e02b3e3a2d7} 
+float src.\+modules.\+Entitys.\+imports.\+Weapon.\+weapon\+\_\+pickup\+\_\+multiplier = weapon\+\_\+pickup\+\_\+multiplier}
+
+\Hypertarget{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8ce672f04b5546a732c251223400bfe2}\index{src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}!weapon\_shoot\_sound@{weapon\_shoot\_sound}}
+\index{weapon\_shoot\_sound@{weapon\_shoot\_sound}!src.modules.Entitys.imports.Weapon@{src.modules.Entitys.imports.Weapon}}
+\doxysubsubsection{\texorpdfstring{weapon\_shoot\_sound}{weapon\_shoot\_sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_entitys_1_1imports_1_1_weapon_a8ce672f04b5546a732c251223400bfe2} 
+pygame.\+mixer.\+Sound src.\+modules.\+Entitys.\+imports.\+Weapon.\+weapon\+\_\+shoot\+\_\+sound = weapon\+\_\+shoot\+\_\+sound}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Entitys/\mbox{\hyperlink{imports_8py}{imports.\+py}}\end{DoxyCompactItemize}

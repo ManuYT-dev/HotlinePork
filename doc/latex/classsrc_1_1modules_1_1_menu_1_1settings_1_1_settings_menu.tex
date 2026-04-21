@@ -1,0 +1,110 @@
+\doxysection{src.\+modules.\+Menu.\+settings.\+Settings\+Menu Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu}{}\label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_acdf446be7e5d1f869585fa143e30facc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, dict \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aac52a16938f65961d686c6672361d1b3}{keybinds}}, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a15f0c14e5730d73af4cca4968295bd6e}{screen}})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a4c1e16d290b32060332c68c3173a3863}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a15f0c14e5730d73af4cca4968295bd6e}{screen}} = screen
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aac52a16938f65961d686c6672361d1b3}{keybinds}} = keybinds
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a60f8ed4c4c55419dddab5e5336e17f50}{load\+\_\+stats}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/player\+\_\+stats.\+json"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aa3ee515c87009d5c6708392dfec221e8}{keybind\+\_\+menu}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu}{Controlls\+Menu}}(self.\+keybinds, self.\+screen)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_acdec85f3ad96ae51171e3bf1b75aa9ef}{keybind\+\_\+button}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}(text="{}Keybinds"{}, center\+\_\+x=self.\+screen.\+get\+\_\+width() // 2, center\+\_\+y=150, width=400, height=120, callback=self.\+keybind\+\_\+menu.\+run)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a7a5cf201384093831111d0fde2f25b69}{sound\+\_\+menu}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_sound_menu}{Sound\+Menu}}(self.\+screen)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a3932b21a7d7d76411f49dc0227439035}{sound\+\_\+button}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}(text="{}Sound"{}, center\+\_\+x=self.\+screen.\+get\+\_\+width() // 2, center\+\_\+y=350, width=400, height=120, callback=self.\+sound\+\_\+menu.\+run)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_ab42ac4ada8612ee5ca8106d585f02263}{stats\+\_\+display}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1player__stats_1_1_stats_display}{Stats\+Display}}(self.\+screen)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a1b2b857e784c4046487868d770a11b4a}{stats\+\_\+button}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}(text="{}Statistics"{}, center\+\_\+x=self.\+screen.\+get\+\_\+width() // 2, center\+\_\+y=550, width=400, height=120, callback=self.\+stats\+\_\+display.\+run)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_acdf446be7e5d1f869585fa143e30facc}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_acdf446be7e5d1f869585fa143e30facc} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{keybinds}{, }\item[{pygame.\+Surface}]{screen}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a4c1e16d290b32060332c68c3173a3863}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!run@{run}}
+\index{run@{run}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a4c1e16d290b32060332c68c3173a3863} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_acdec85f3ad96ae51171e3bf1b75aa9ef}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!keybind\_button@{keybind\_button}}
+\index{keybind\_button@{keybind\_button}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{keybind\_button}{keybind\_button}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_acdec85f3ad96ae51171e3bf1b75aa9ef} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+keybind\+\_\+button = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}(text="{}Keybinds"{}, center\+\_\+x=self.\+screen.\+get\+\_\+width() // 2, center\+\_\+y=150, width=400, height=120, callback=self.\+keybind\+\_\+menu.\+run)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aa3ee515c87009d5c6708392dfec221e8}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!keybind\_menu@{keybind\_menu}}
+\index{keybind\_menu@{keybind\_menu}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{keybind\_menu}{keybind\_menu}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aa3ee515c87009d5c6708392dfec221e8} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+keybind\+\_\+menu = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1controlls__settings_1_1_controlls_menu}{Controlls\+Menu}}(self.\+keybinds, self.\+screen)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aac52a16938f65961d686c6672361d1b3}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!keybinds@{keybinds}}
+\index{keybinds@{keybinds}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{keybinds}{keybinds}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_aac52a16938f65961d686c6672361d1b3} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+keybinds = keybinds}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a60f8ed4c4c55419dddab5e5336e17f50}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!load\_stats@{load\_stats}}
+\index{load\_stats@{load\_stats}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{load\_stats}{load\_stats}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a60f8ed4c4c55419dddab5e5336e17f50} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+load\+\_\+stats = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/player\+\_\+stats.\+json"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a15f0c14e5730d73af4cca4968295bd6e}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!screen@{screen}}
+\index{screen@{screen}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a15f0c14e5730d73af4cca4968295bd6e} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+screen = screen}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a3932b21a7d7d76411f49dc0227439035}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!sound\_button@{sound\_button}}
+\index{sound\_button@{sound\_button}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{sound\_button}{sound\_button}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a3932b21a7d7d76411f49dc0227439035} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+sound\+\_\+button = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}(text="{}Sound"{}, center\+\_\+x=self.\+screen.\+get\+\_\+width() // 2, center\+\_\+y=350, width=400, height=120, callback=self.\+sound\+\_\+menu.\+run)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a7a5cf201384093831111d0fde2f25b69}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!sound\_menu@{sound\_menu}}
+\index{sound\_menu@{sound\_menu}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{sound\_menu}{sound\_menu}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a7a5cf201384093831111d0fde2f25b69} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+sound\+\_\+menu = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_sound_menu}{Sound\+Menu}}(self.\+screen)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a1b2b857e784c4046487868d770a11b4a}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!stats\_button@{stats\_button}}
+\index{stats\_button@{stats\_button}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{stats\_button}{stats\_button}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_a1b2b857e784c4046487868d770a11b4a} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+stats\+\_\+button = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_button}{Button}}(text="{}Statistics"{}, center\+\_\+x=self.\+screen.\+get\+\_\+width() // 2, center\+\_\+y=550, width=400, height=120, callback=self.\+stats\+\_\+display.\+run)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_ab42ac4ada8612ee5ca8106d585f02263}\index{src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}!stats\_display@{stats\_display}}
+\index{stats\_display@{stats\_display}!src.modules.Menu.settings.SettingsMenu@{src.modules.Menu.settings.SettingsMenu}}
+\doxysubsubsection{\texorpdfstring{stats\_display}{stats\_display}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu_ab42ac4ada8612ee5ca8106d585f02263} 
+src.\+modules.\+Menu.\+settings.\+Settings\+Menu.\+stats\+\_\+display = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1player__stats_1_1_stats_display}{Stats\+Display}}(self.\+screen)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Menu/\mbox{\hyperlink{settings_8py}{settings.\+py}}\end{DoxyCompactItemize}

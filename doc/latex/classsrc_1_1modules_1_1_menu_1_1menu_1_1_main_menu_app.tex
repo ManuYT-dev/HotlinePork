@@ -1,0 +1,129 @@
+\doxysection{src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app}{}\label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_ab0cfe7cde6af6e132f049904a1ab8ade}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_aecc74f4339e76b9ed32109f572eb5b04}{load\+\_\+button\+\_\+spritesheet}} (self, spritesheet\+\_\+path, start\+\_\+width, start\+\_\+height, final\+\_\+width, final\+\_\+height)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a3857ecc49e3bf127a1c7bbea10cf1884}{mode\+\_\+update}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a7e201bb2f305161ae0b8a118162adc6d}{choose\+\_\+mode}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a63513bb160764ff5ff8a65e87d74dec8}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a5ce603f162906df88c1d1bf438a68f52}{savedata\+\_\+achievements}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/Achievements.\+json"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a161d724f3a9dd9210770a8305240059b}{savedate\+\_\+statistics}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/player\+\_\+stats.\+json"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a0b23bec35962ab2bc14d184c24cc7d5c}{savedata\+\_\+sound}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/sound.\+json"{})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a57a8ff6a526066f17bcfdf0ce71b3d46}{settings\+\_\+menu}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu}{Settings\+Menu}}(ALL\+\_\+\+KEYS, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_ac8e5096b5671d32b5fb358b1c813f72d}{changeable\+\_\+values.\+SCREEN}})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a88287e927d6a2ee307595c53e1424849}{background}} = pygame.\+transform.\+scale(pygame.\+image.\+load(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/designs/Titlescreen.\+png"{}).convert(), changeable\+\_\+values.\+SCREEN.\+size)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_ab4a62b5ca6a6bdd04f1a61af84baeb61}{button\+\_\+spritesheet}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a30d520c47c090f29c8950dada00b51ca}{modes}} = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_modes}{Modes}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_ab0cfe7cde6af6e132f049904a1ab8ade}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_ab0cfe7cde6af6e132f049904a1ab8ade} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a7e201bb2f305161ae0b8a118162adc6d}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!choose\_mode@{choose\_mode}}
+\index{choose\_mode@{choose\_mode}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{choose\_mode()}{choose\_mode()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a7e201bb2f305161ae0b8a118162adc6d} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+choose\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_aecc74f4339e76b9ed32109f572eb5b04}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!load\_button\_spritesheet@{load\_button\_spritesheet}}
+\index{load\_button\_spritesheet@{load\_button\_spritesheet}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{load\_button\_spritesheet()}{load\_button\_spritesheet()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_aecc74f4339e76b9ed32109f572eb5b04} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+load\+\_\+button\+\_\+spritesheet (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{spritesheet\+\_\+path}{, }\item[{}]{start\+\_\+width}{, }\item[{}]{start\+\_\+height}{, }\item[{}]{final\+\_\+width}{, }\item[{}]{final\+\_\+height}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a3857ecc49e3bf127a1c7bbea10cf1884}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!mode\_update@{mode\_update}}
+\index{mode\_update@{mode\_update}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{mode\_update()}{mode\_update()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a3857ecc49e3bf127a1c7bbea10cf1884} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+mode\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a63513bb160764ff5ff8a65e87d74dec8}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!run@{run}}
+\index{run@{run}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a63513bb160764ff5ff8a65e87d74dec8} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a88287e927d6a2ee307595c53e1424849}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!background@{background}}
+\index{background@{background}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a88287e927d6a2ee307595c53e1424849} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+background = pygame.\+transform.\+scale(pygame.\+image.\+load(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/designs/Titlescreen.\+png"{}).convert(), changeable\+\_\+values.\+SCREEN.\+size)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_ab4a62b5ca6a6bdd04f1a61af84baeb61}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!button\_spritesheet@{button\_spritesheet}}
+\index{button\_spritesheet@{button\_spritesheet}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{button\_spritesheet}{button\_spritesheet}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_ab4a62b5ca6a6bdd04f1a61af84baeb61} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+button\+\_\+spritesheet}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.load\_button\_spritesheet(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ spritesheet\_path=changeable\_values.DEFAULT\_PATH\ +\ \textcolor{stringliteral}{r"{}/assets/designs/Buttons.png"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ start\_width=100,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ start\_height=45,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ final\_width=200,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ final\_height=90}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a30d520c47c090f29c8950dada00b51ca}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!modes@{modes}}
+\index{modes@{modes}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{modes}{modes}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a30d520c47c090f29c8950dada00b51ca} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+modes = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1menu_1_1_modes}{Modes}}()}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a5ce603f162906df88c1d1bf438a68f52}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!savedata\_achievements@{savedata\_achievements}}
+\index{savedata\_achievements@{savedata\_achievements}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{savedata\_achievements}{savedata\_achievements}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a5ce603f162906df88c1d1bf438a68f52} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+savedata\+\_\+achievements = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/Achievements.\+json"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a0b23bec35962ab2bc14d184c24cc7d5c}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!savedata\_sound@{savedata\_sound}}
+\index{savedata\_sound@{savedata\_sound}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{savedata\_sound}{savedata\_sound}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a0b23bec35962ab2bc14d184c24cc7d5c} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+savedata\+\_\+sound = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/sound.\+json"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a161d724f3a9dd9210770a8305240059b}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!savedate\_statistics@{savedate\_statistics}}
+\index{savedate\_statistics@{savedate\_statistics}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{savedate\_statistics}{savedate\_statistics}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a161d724f3a9dd9210770a8305240059b} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+savedate\+\_\+statistics = \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{Save\+Data}}(\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_a046fe070ba10d6d2153a900417e01cf3}{changeable\+\_\+values.\+DEFAULT\+\_\+\+PATH}} + r"{}/assets/saved\+\_\+datas/player\+\_\+stats.\+json"{})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a57a8ff6a526066f17bcfdf0ce71b3d46}\index{src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}!settings\_menu@{settings\_menu}}
+\index{settings\_menu@{settings\_menu}!src.modules.Menu.menu.MainMenuApp@{src.modules.Menu.menu.MainMenuApp}}
+\doxysubsubsection{\texorpdfstring{settings\_menu}{settings\_menu}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1menu_1_1_main_menu_app_a57a8ff6a526066f17bcfdf0ce71b3d46} 
+src.\+modules.\+Menu.\+menu.\+Main\+Menu\+App.\+settings\+\_\+menu = \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1settings_1_1_settings_menu}{Settings\+Menu}}(ALL\+\_\+\+KEYS, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1globals_1_1changeable__values_ac8e5096b5671d32b5fb358b1c813f72d}{changeable\+\_\+values.\+SCREEN}})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Menu/\mbox{\hyperlink{menu_8py}{menu.\+py}}\end{DoxyCompactItemize}

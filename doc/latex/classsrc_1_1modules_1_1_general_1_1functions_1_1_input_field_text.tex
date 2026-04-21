@@ -1,0 +1,174 @@
+\doxysection{src.\+modules.\+General.\+functions.\+Input\+Field\+Text Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text}{}\label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a3d1503c489e32b97b7cb3eeff72df1bd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, tuple\mbox{[}int, int\mbox{]} position, tuple\mbox{[}int, int\mbox{]} size, pygame.\+font.\+Font \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a7f5e83634c6edbab15b44ee4fefdb9d9}{font}}, str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a55b0df2d37f6111da037dcba75c144de}{start\+\_\+text}}="{}"{}, int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_acf2e3631f06b929a20cfd0bc80be404a}{max\+\_\+length}}=20, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a0cd510e4e764872a562185f42bb6a33c}{inactive\+\_\+image}}=None, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad762256f78765d43305716925d7ed51f}{active\+\_\+image}}=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_aa6b02173ead412fa24faaa00e601c22b}{handle\+\_\+event}} (self, pygame.\+event.\+Event event)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad40c9b33db1103ecb5d43b397962413c}{draw}} (self, pygame.\+Surface surface)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a2975aa9a5be7af3a1880b3048c136319}{rect}} = pygame.\+Rect(position, size)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a7f5e83634c6edbab15b44ee4fefdb9d9}{font}} = font
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a55b0df2d37f6111da037dcba75c144de}{start\+\_\+text}} = start\+\_\+text
+\item 
+str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a93bbb4ec7c203d12a9a4ccd1b83a4d58}{text}} = "{}"{}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_acf2e3631f06b929a20cfd0bc80be404a}{max\+\_\+length}} = max\+\_\+length
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_adde4d753f9ede8f7333dbfc22d7e90d2}{active}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a0cd510e4e764872a562185f42bb6a33c}{inactive\+\_\+image}} = inactive\+\_\+image
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad762256f78765d43305716925d7ed51f}{active\+\_\+image}} = active\+\_\+image
+\item 
+tuple \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_af0bf9755e8d07b94351f0aefb08f4fbf}{color\+\_\+inactive}} = (200, 200, 200)
+\item 
+tuple \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a788704e88972803410a081fcb89efe24}{color\+\_\+active}} = (100, 100, 255)
+\item 
+tuple \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a173db475faa2a78dc345047ceafe8454}{color}} = self.\+color\+\_\+inactive
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class representing a text input field with keyboard and mouse input support.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a3d1503c489e32b97b7cb3eeff72df1bd}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a3d1503c489e32b97b7cb3eeff72df1bd} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\mbox{[}int, int\mbox{]}}]{position}{, }\item[{tuple\mbox{[}int, int\mbox{]}}]{size}{, }\item[{pygame.\+font.\+Font}]{font}{, }\item[{str }]{start\+\_\+text}{ = {\ttfamily "{}"{}}, }\item[{int }]{max\+\_\+length}{ = {\ttfamily 20}, }\item[{pygame.\+Surface }]{inactive\+\_\+image}{ = {\ttfamily None}, }\item[{pygame.\+Surface }]{active\+\_\+image}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes an InputFieldText object.
+
+Args:
+    position (tuple[int, int]): The top-left corner of the input field.
+    size (tuple[int, int]): The size of the input field.
+    font (pygame.font.Font): The font of the input text.
+    start_text (str, optional): The initial text in the input field. Defaults to "".
+    max_length (int, optional): The maximum length of the text in the input field. Defaults to 20.
+    inactive_image (pygame.Surface, optional): The image to display when the input field is inactive. Defaults to None.
+    active_image (pygame.Surface, optional): The image to display when the input field is active. Defaults to None.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad40c9b33db1103ecb5d43b397962413c}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!draw@{draw}}
+\index{draw@{draw}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad40c9b33db1103ecb5d43b397962413c} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{surface}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws the input field on the given surface.
+
+If the input field does not have inactive or active images, it draws a rectangle
+with the current color. Otherwise, it blits the appropriate image depending on the
+active state. Additionally, the text within the input field is rendered and blitted
+onto the surface.
+
+Args:
+    surface (pygame.Surface): The surface on which to draw the input field.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_aa6b02173ead412fa24faaa00e601c22b}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!handle\_event@{handle\_event}}
+\index{handle\_event@{handle\_event}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{handle\_event()}{handle\_event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_aa6b02173ead412fa24faaa00e601c22b} 
+ str \texorpdfstring{$\vert$}{|} None src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+handle\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+event.\+Event}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles events related to the input field.
+
+If the event is a MOUSEBUTTONDOWN and the mouse is within the input field's rectangle,
+the input field is toggled as active or inactive. If the event is a KEYDOWN and the
+input field is active, the input field processes the key event by appending the key's
+corresponding character to the input field's text, or by removing the last character
+if the key was the backspace key.
+
+Args:
+    event (pygame.event.Event): The event to be processed.
+
+Returns:
+    str | None: The current text in the input field if the return key was pressed, otherwise None.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_adde4d753f9ede8f7333dbfc22d7e90d2}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!active@{active}}
+\index{active@{active}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_adde4d753f9ede8f7333dbfc22d7e90d2} 
+bool src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+active = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad762256f78765d43305716925d7ed51f}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!active\_image@{active\_image}}
+\index{active\_image@{active\_image}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{active\_image}{active\_image}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_ad762256f78765d43305716925d7ed51f} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+active\+\_\+image = active\+\_\+image}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a173db475faa2a78dc345047ceafe8454}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!color@{color}}
+\index{color@{color}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a173db475faa2a78dc345047ceafe8454} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+color = self.\+color\+\_\+inactive}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a788704e88972803410a081fcb89efe24}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!color\_active@{color\_active}}
+\index{color\_active@{color\_active}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{color\_active}{color\_active}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a788704e88972803410a081fcb89efe24} 
+tuple src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+color\+\_\+active = (100, 100, 255)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_af0bf9755e8d07b94351f0aefb08f4fbf}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!color\_inactive@{color\_inactive}}
+\index{color\_inactive@{color\_inactive}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{color\_inactive}{color\_inactive}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_af0bf9755e8d07b94351f0aefb08f4fbf} 
+tuple src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+color\+\_\+inactive = (200, 200, 200)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a7f5e83634c6edbab15b44ee4fefdb9d9}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!font@{font}}
+\index{font@{font}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a7f5e83634c6edbab15b44ee4fefdb9d9} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+font = font}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a0cd510e4e764872a562185f42bb6a33c}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!inactive\_image@{inactive\_image}}
+\index{inactive\_image@{inactive\_image}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{inactive\_image}{inactive\_image}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a0cd510e4e764872a562185f42bb6a33c} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+inactive\+\_\+image = inactive\+\_\+image}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_acf2e3631f06b929a20cfd0bc80be404a}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!max\_length@{max\_length}}
+\index{max\_length@{max\_length}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{max\_length}{max\_length}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_acf2e3631f06b929a20cfd0bc80be404a} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+max\+\_\+length = max\+\_\+length}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a2975aa9a5be7af3a1880b3048c136319}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!rect@{rect}}
+\index{rect@{rect}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a2975aa9a5be7af3a1880b3048c136319} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+rect = pygame.\+Rect(position, size)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a55b0df2d37f6111da037dcba75c144de}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!start\_text@{start\_text}}
+\index{start\_text@{start\_text}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{start\_text}{start\_text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a55b0df2d37f6111da037dcba75c144de} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+start\+\_\+text = start\+\_\+text}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a93bbb4ec7c203d12a9a4ccd1b83a4d58}\index{src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}!text@{text}}
+\index{text@{text}!src.modules.General.functions.InputFieldText@{src.modules.General.functions.InputFieldText}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_input_field_text_a93bbb4ec7c203d12a9a4ccd1b83a4d58} 
+src.\+modules.\+General.\+functions.\+Input\+Field\+Text.\+text = "{}"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+General/\mbox{\hyperlink{functions_8py}{functions.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,205 @@
+\doxysection{src.\+modules.\+Map.\+tiles.\+Tile\+Map Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map}{}\label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a53428be31da84360ccbcbbeb315839d4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a230da60d023726270ebb98fcce6d1a05}{filename}}, str \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a18406f2be0e153a4c7dd04556248205d}{spritesheet}}, int \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac4784d71df261ecc99d4a1f5aa3e980e}{tile\+\_\+size}}=64, int \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3690b69821acc4ec8a1ed65936c04f91}{final\+\_\+tile\+\_\+size}}=\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1globals_ac836551aaa76c2f6acbcf5f4ab075cf7}{globals.\+TILE\+\_\+\+SIZE}})
+\item 
+pygame.\+Surface\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a2ac4220177e8dbccab4377eb9c472cdf}{draw}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ab70c5bf0a190ff03e5262137287ee88a}{screen}}=None, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}} camera=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a8e6a7f905b45ce1df0320313e2c5027d}{debug\+\_\+draw\+\_\+sprites}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ab70c5bf0a190ff03e5262137287ee88a}{screen}})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a8e5cf662722133dbfadc315fa722aad8}{draw\+\_\+visible\+\_\+tiles}} (self, pygame.\+Surface surface, pygame.\+Rect camera\+\_\+rect)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac4784d71df261ecc99d4a1f5aa3e980e}{tile\+\_\+size}} = tile\+\_\+size
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3690b69821acc4ec8a1ed65936c04f91}{final\+\_\+tile\+\_\+size}} = final\+\_\+tile\+\_\+size
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a616ced6a2436929115faec964abeb2cc}{start\+\_\+x}}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a95db115c3305536bd90fc459a9acddb6}{start\+\_\+y}} = 0, 0
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a18406f2be0e153a4c7dd04556248205d}{spritesheet}} = spritesheet
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a230da60d023726270ebb98fcce6d1a05}{filename}} = filename
+\item 
+list \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_adb4c09fed4a9ecb82301bf787d3abfcb}{map}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac405d0a7034259e037c1fbe90208c6ff}{spritesheet\+\_\+images\+\_\+width}} = self.\+spritesheet.\+width // self.\+tile\+\_\+size
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac812cb3a29bea69b37b3e5861fe80581}{spritesheet\+\_\+images\+\_\+height}} = self.\+spritesheet.\+height // self.\+tile\+\_\+size
+\item 
+list \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a772be4f55578dfc02fef98189f9e22b2}{walls}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ab70c5bf0a190ff03e5262137287ee88a}{screen}} = pygame.\+Surface((len(self.\+map\mbox{[}0\mbox{]}) \texorpdfstring{$\ast$}{*} self.\+final\+\_\+tile\+\_\+size, len(self.\+map) \texorpdfstring{$\ast$}{*} self.\+final\+\_\+tile\+\_\+size))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a072491ee80fe4896cb1911fb70b94a49}{\+\_\+read\+\_\+csv}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3757406ff29d9b88cd9b29a2a68b60a4}{\+\_\+get\+\_\+walls}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3c207a4d413bd3fddbc62dc7e34f680a}{\+\_\+draw\+\_\+init}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict\mbox{[}int pygame.\+Surface\mbox{]}=\{\} \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac288c1a852a37704f47b898d3a1ca88a}{\+\_\+spritetiles}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class representing a tile map.
+
+Attributes:
+    tile_size (int): The size of a tile in pixels.
+    final_tile_size (int): The final size of a tile in pixels.
+    start_x (int): The x-coordinate of the top-left corner of the map.
+    start_y (int): The y-coordinate of the top-left corner of the map.
+    filename (str): The name of the file containing the map data.
+    spritesheet (str): The path to the spritesheet image.
+    map (list[list[str]]): A 2D list representing the map data.
+    spritesheet (pygame.Surface): The spritesheet image.
+    spritesheet_images_width (int): The number of images in the spritesheet in the x-direction.
+    spritesheet_images_height (int): The number of images in the spritesheet in the y-direction.
+    _spritetiles (dict[str, pygame.Surface]): A dictionary mapping sprite indices to their corresponding scaled surface.
+    screen (pygame.Surface): The surface on which the map is drawn.
+    camera (Camera): The camera object used for scrolling the map.
+
+Methods:
+    _read_csv(): Reads the map data from a CSV file.
+    _get_walls(): Calculates the walls of the map.
+    _draw_init(): Initializes the map by drawing the visible tiles.
+    draw_visible_tiles(): Draws the visible tiles on the screen.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a53428be31da84360ccbcbbeb315839d4}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a53428be31da84360ccbcbbeb315839d4} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{, }\item[{str}]{spritesheet}{, }\item[{int }]{tile\+\_\+size}{ = {\ttfamily 64}, }\item[{int }]{final\+\_\+tile\+\_\+size}{ = {\ttfamily \mbox{\hyperlink{classsrc_1_1modules_1_1_map_1_1tiles_1_1globals_ac836551aaa76c2f6acbcf5f4ab075cf7}{globals.\+TILE\+\_\+\+SIZE}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3c207a4d413bd3fddbc62dc7e34f680a}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!\_draw\_init@{\_draw\_init}}
+\index{\_draw\_init@{\_draw\_init}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{\_draw\_init()}{\_draw\_init()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3c207a4d413bd3fddbc62dc7e34f680a} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+\_\+draw\+\_\+init (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3757406ff29d9b88cd9b29a2a68b60a4}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!\_get\_walls@{\_get\_walls}}
+\index{\_get\_walls@{\_get\_walls}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{\_get\_walls()}{\_get\_walls()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3757406ff29d9b88cd9b29a2a68b60a4} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+\_\+get\+\_\+walls (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a072491ee80fe4896cb1911fb70b94a49}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!\_read\_csv@{\_read\_csv}}
+\index{\_read\_csv@{\_read\_csv}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{\_read\_csv()}{\_read\_csv()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a072491ee80fe4896cb1911fb70b94a49} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+\_\+read\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a8e6a7f905b45ce1df0320313e2c5027d}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!debug\_draw\_sprites@{debug\_draw\_sprites}}
+\index{debug\_draw\_sprites@{debug\_draw\_sprites}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{debug\_draw\_sprites()}{debug\_draw\_sprites()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a8e6a7f905b45ce1df0320313e2c5027d} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+debug\+\_\+draw\+\_\+sprites (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{screen}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a2ac4220177e8dbccab4377eb9c472cdf}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!draw@{draw}}
+\index{draw@{draw}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a2ac4220177e8dbccab4377eb9c472cdf} 
+ pygame.\+Surface \texorpdfstring{$\vert$}{|} None src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface }]{screen}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{Camera}} }]{camera}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a8e5cf662722133dbfadc315fa722aad8}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!draw\_visible\_tiles@{draw\_visible\_tiles}}
+\index{draw\_visible\_tiles@{draw\_visible\_tiles}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{draw\_visible\_tiles()}{draw\_visible\_tiles()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a8e5cf662722133dbfadc315fa722aad8} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+draw\+\_\+visible\+\_\+tiles (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{surface}{, }\item[{pygame.\+Rect}]{camera\+\_\+rect}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac288c1a852a37704f47b898d3a1ca88a}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!\_spritetiles@{\_spritetiles}}
+\index{\_spritetiles@{\_spritetiles}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{\_spritetiles}{\_spritetiles}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac288c1a852a37704f47b898d3a1ca88a} 
+dict\mbox{[}int pygame.\+Surface\mbox{]} = \{\} src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+\_\+spritetiles\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a230da60d023726270ebb98fcce6d1a05}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!filename@{filename}}
+\index{filename@{filename}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a230da60d023726270ebb98fcce6d1a05} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+filename = filename}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3690b69821acc4ec8a1ed65936c04f91}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!final\_tile\_size@{final\_tile\_size}}
+\index{final\_tile\_size@{final\_tile\_size}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{final\_tile\_size}{final\_tile\_size}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a3690b69821acc4ec8a1ed65936c04f91} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+final\+\_\+tile\+\_\+size = final\+\_\+tile\+\_\+size}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_adb4c09fed4a9ecb82301bf787d3abfcb}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!map@{map}}
+\index{map@{map}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_adb4c09fed4a9ecb82301bf787d3abfcb} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+map = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ab70c5bf0a190ff03e5262137287ee88a}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!screen@{screen}}
+\index{screen@{screen}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ab70c5bf0a190ff03e5262137287ee88a} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+screen = pygame.\+Surface((len(self.\+map\mbox{[}0\mbox{]}) \texorpdfstring{$\ast$}{*} self.\+final\+\_\+tile\+\_\+size, len(self.\+map) \texorpdfstring{$\ast$}{*} self.\+final\+\_\+tile\+\_\+size))}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a18406f2be0e153a4c7dd04556248205d}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!spritesheet@{spritesheet}}
+\index{spritesheet@{spritesheet}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{spritesheet}{spritesheet}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a18406f2be0e153a4c7dd04556248205d} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+spritesheet = spritesheet}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac812cb3a29bea69b37b3e5861fe80581}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!spritesheet\_images\_height@{spritesheet\_images\_height}}
+\index{spritesheet\_images\_height@{spritesheet\_images\_height}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{spritesheet\_images\_height}{spritesheet\_images\_height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac812cb3a29bea69b37b3e5861fe80581} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+spritesheet\+\_\+images\+\_\+height = self.\+spritesheet.\+height // self.\+tile\+\_\+size}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac405d0a7034259e037c1fbe90208c6ff}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!spritesheet\_images\_width@{spritesheet\_images\_width}}
+\index{spritesheet\_images\_width@{spritesheet\_images\_width}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{spritesheet\_images\_width}{spritesheet\_images\_width}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac405d0a7034259e037c1fbe90208c6ff} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+spritesheet\+\_\+images\+\_\+width = self.\+spritesheet.\+width // self.\+tile\+\_\+size}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a616ced6a2436929115faec964abeb2cc}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!start\_x@{start\_x}}
+\index{start\_x@{start\_x}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{start\_x}{start\_x}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a616ced6a2436929115faec964abeb2cc} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+start\+\_\+x}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a95db115c3305536bd90fc459a9acddb6}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!start\_y@{start\_y}}
+\index{start\_y@{start\_y}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{start\_y}{start\_y}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a95db115c3305536bd90fc459a9acddb6} 
+int src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+start\+\_\+y = 0, 0}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac4784d71df261ecc99d4a1f5aa3e980e}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_ac4784d71df261ecc99d4a1f5aa3e980e} 
+src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+tile\+\_\+size = tile\+\_\+size}
+
+\Hypertarget{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a772be4f55578dfc02fef98189f9e22b2}\index{src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}!walls@{walls}}
+\index{walls@{walls}!src.modules.Map.tiles.TileMap@{src.modules.Map.tiles.TileMap}}
+\doxysubsubsection{\texorpdfstring{walls}{walls}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_map_1_1tiles_1_1_tile_map_a772be4f55578dfc02fef98189f9e22b2} 
+list src.\+modules.\+Map.\+tiles.\+Tile\+Map.\+walls = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Map/\mbox{\hyperlink{tiles_8py}{tiles.\+py}}\end{DoxyCompactItemize}

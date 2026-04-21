@@ -1,0 +1,208 @@
+\doxysection{src.\+modules.\+General.\+functions.\+Camera Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}{}\label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a7d3d66e10077482ed67deef0fce76c86}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab9996b4336de29f48b5aec8f15d6c6da}{main\+\_\+screen}}, pygame.\+Surface \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ae67efc0fe49480fb3ae9c54665bfc5f4}{surface}}, int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a8d2ae8a5a6e33e77d6dbac8de11e81de}{width}}, int \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab92c1504f854d9fc3b0582c2dbcd4d1f}{height}}, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}}\texorpdfstring{$\vert$}{|}pygame.\+Vector2 \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ac91b29a002fe4cfdde0c5f2e197556d6}{main\+\_\+target}}=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a61474a191042df09b55bc5eca50b392f}{track}} (self, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}}\texorpdfstring{$\vert$}{|}pygame.\+Vector2\texorpdfstring{$\vert$}{|}tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}int, int\mbox{]} target=None, float speed=0.\+1, float max\+\_\+away=200)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_af9ecac5278b4525532bebe5015508eb6}{look\+\_\+around}} (self, pygame.\+Vector2\texorpdfstring{$\vert$}{|}tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}int, int\mbox{]} position, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} target=None, float buffer=50, float follow\+\_\+speed=1, float max\+\_\+away=100)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a971b4f4d6848c466a75675eaa098ace4}{draw\+\_\+debug}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a26004e96428ab0696729119cb22b8b78}{update\+\_\+all\+\_\+position}} (self, pygame.\+Vector2\texorpdfstring{$\vert$}{|}tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}int, int\mbox{]} position)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab26468069484bdb79951738fa5f3680d}{get\+\_\+mouse\+\_\+pos}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab9996b4336de29f48b5aec8f15d6c6da}{main\+\_\+screen}} = main\+\_\+screen
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ae67efc0fe49480fb3ae9c54665bfc5f4}{surface}} = surface
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a8d2ae8a5a6e33e77d6dbac8de11e81de}{width}} = width
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab92c1504f854d9fc3b0582c2dbcd4d1f}{height}} = height
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ac91b29a002fe4cfdde0c5f2e197556d6}{main\+\_\+target}} = main\+\_\+target
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a3d024964a267f27a125eefb2e5c57604}{rect}} = pygame.\+FRect(0, 0, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a8d2ae8a5a6e33e77d6dbac8de11e81de}{width}}, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab92c1504f854d9fc3b0582c2dbcd4d1f}{height}})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a141c14a2a4b4c83eac721e2a94768bea}{POSITION}} = pygame.\+Vector2(self.\+rect.\+center)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_aa6f564d5dbcd4d6567c81ac0366630c7}{x}}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a76d63c63245cd651c4e02c8e1384824f}{y}} = self.\+POSITION
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A camera class that tracks a target and renders the main screen and smaller surface to render to.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a7d3d66e10077482ed67deef0fce76c86}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a7d3d66e10077482ed67deef0fce76c86} 
+src.\+modules.\+General.\+functions.\+Camera.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{main\+\_\+screen}{, }\item[{pygame.\+Surface}]{surface}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} \texorpdfstring{$\vert$}{|} pygame.\+Vector2 }]{main\+\_\+target}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a camera object that tracks a target, with a main screen and a smaller surface to render to.
+
+Args:
+    main_screen (pygame.Surface): The main screen to render to
+    surface (pygame.Surface): The smaller surface to render to
+    width (int): The width of the smaller surface
+    height (int): The height of the smaller surface
+    main_target (Entity | pygame.Vector2): The target to track (defaults to None)
+
+Attributes:
+    main_screen (pygame.Surface): The main screen to render to
+    surface (pygame.Surface): The smaller surface to render to
+    width (int): The width of the smaller surface
+    height (int): The height of the smaller surface
+    main_target (Entity | pygame.Vector2): The target to track
+    rect (pygame.FRect): The rectangle representing the camera's position and size
+    POSITION (pygame.Vector2): The camera's position
+    x (int): The x-coordinate of the camera's position
+    y (int): The y-coordinate of the camera's position
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a971b4f4d6848c466a75675eaa098ace4}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!draw\_debug@{draw\_debug}}
+\index{draw\_debug@{draw\_debug}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{draw\_debug()}{draw\_debug()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a971b4f4d6848c466a75675eaa098ace4} 
+src.\+modules.\+General.\+functions.\+Camera.\+draw\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a red rectangle around the camera's view and a black circle at the camera's position, for debugging purposes.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab26468069484bdb79951738fa5f3680d}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!get\_mouse\_pos@{get\_mouse\_pos}}
+\index{get\_mouse\_pos@{get\_mouse\_pos}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{get\_mouse\_pos()}{get\_mouse\_pos()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab26468069484bdb79951738fa5f3680d} 
+src.\+modules.\+General.\+functions.\+Camera.\+get\+\_\+mouse\+\_\+pos (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the current mouse position relative to the camera's position.
+
+This method calculates the mouse position by adding the current position
+of the mouse within the window to the top-left corner position of the
+camera's view rectangle.
+
+Returns:
+    pygame.Vector2: The mouse position as a vector relative to the camera.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_af9ecac5278b4525532bebe5015508eb6}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!look\_around@{look\_around}}
+\index{look\_around@{look\_around}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{look\_around()}{look\_around()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_af9ecac5278b4525532bebe5015508eb6} 
+src.\+modules.\+General.\+functions.\+Camera.\+look\+\_\+around (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Vector2 \texorpdfstring{$\vert$}{|} tuple\mbox{[}int, int\mbox{]} \texorpdfstring{$\vert$}{|} list\mbox{[}int, int\mbox{]}}]{position}{, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} }]{target}{ = {\ttfamily None}, }\item[{float }]{buffer}{ = {\ttfamily 50}, }\item[{float }]{follow\+\_\+speed}{ = {\ttfamily 1}, }\item[{float }]{max\+\_\+away}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjusts the camera's position to be within a certain distance (buffer) of the target's position.
+
+Args:
+    position (pygame.Vector2 | tuple[int, int] | list[int, int]): The position to look around
+    target (Entity, optional): The target to look around. Defaults to None.
+    buffer (float, optional): The buffer distance to stay away from the target. Defaults to 50.
+    follow_speed (float, optional): The speed at which the camera moves. Defaults to 1.
+    max_away (float, optional): The maximum distance the camera can be from the target. Defaults to 100.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a61474a191042df09b55bc5eca50b392f}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!track@{track}}
+\index{track@{track}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{track()}{track()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a61474a191042df09b55bc5eca50b392f} 
+src.\+modules.\+General.\+functions.\+Camera.\+track (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1types_1_1_entity}{Entity}} \texorpdfstring{$\vert$}{|} pygame.\+Vector2 \texorpdfstring{$\vert$}{|} tuple\mbox{[}int, int\mbox{]} \texorpdfstring{$\vert$}{|} list\mbox{[}int, int\mbox{]} }]{target}{ = {\ttfamily None}, }\item[{float }]{speed}{ = {\ttfamily 0.1}, }\item[{float }]{max\+\_\+away}{ = {\ttfamily 200}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tracks a target and updates the camera's position to follow it.
+
+Args:
+    target (Entity | pygame.Vector2 | tuple[int, int] | list[int, int], optional): The target to track (defaults to None)
+    speed (float, optional): The speed at which the camera moves (defaults to 0.1)
+    max_away (float, optional): The maximum distance the camera can be from the target (defaults to 200)
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a26004e96428ab0696729119cb22b8b78}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!update\_all\_position@{update\_all\_position}}
+\index{update\_all\_position@{update\_all\_position}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{update\_all\_position()}{update\_all\_position()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a26004e96428ab0696729119cb22b8b78} 
+src.\+modules.\+General.\+functions.\+Camera.\+update\+\_\+all\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Vector2 \texorpdfstring{$\vert$}{|} tuple\mbox{[}int, int\mbox{]} \texorpdfstring{$\vert$}{|} list\mbox{[}int, int\mbox{]}}]{position}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the camera's position and rect attributes to the given position.
+
+Args:
+    position (pygame.Vector2 | tuple[int, int] | list[int, int]): The new position to set the camera to.
+
+Returns:
+    None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab92c1504f854d9fc3b0582c2dbcd4d1f}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!height@{height}}
+\index{height@{height}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab92c1504f854d9fc3b0582c2dbcd4d1f} 
+src.\+modules.\+General.\+functions.\+Camera.\+height = height}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab9996b4336de29f48b5aec8f15d6c6da}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!main\_screen@{main\_screen}}
+\index{main\_screen@{main\_screen}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{main\_screen}{main\_screen}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab9996b4336de29f48b5aec8f15d6c6da} 
+src.\+modules.\+General.\+functions.\+Camera.\+main\+\_\+screen = main\+\_\+screen}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ac91b29a002fe4cfdde0c5f2e197556d6}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!main\_target@{main\_target}}
+\index{main\_target@{main\_target}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{main\_target}{main\_target}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ac91b29a002fe4cfdde0c5f2e197556d6} 
+src.\+modules.\+General.\+functions.\+Camera.\+main\+\_\+target = main\+\_\+target}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a141c14a2a4b4c83eac721e2a94768bea}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!POSITION@{POSITION}}
+\index{POSITION@{POSITION}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{POSITION}{POSITION}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a141c14a2a4b4c83eac721e2a94768bea} 
+src.\+modules.\+General.\+functions.\+Camera.\+POSITION = pygame.\+Vector2(self.\+rect.\+center)}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a3d024964a267f27a125eefb2e5c57604}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!rect@{rect}}
+\index{rect@{rect}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a3d024964a267f27a125eefb2e5c57604} 
+src.\+modules.\+General.\+functions.\+Camera.\+rect = pygame.\+FRect(0, 0, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a8d2ae8a5a6e33e77d6dbac8de11e81de}{width}}, \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ab92c1504f854d9fc3b0582c2dbcd4d1f}{height}})}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ae67efc0fe49480fb3ae9c54665bfc5f4}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!surface@{surface}}
+\index{surface@{surface}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{surface}{surface}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_ae67efc0fe49480fb3ae9c54665bfc5f4} 
+src.\+modules.\+General.\+functions.\+Camera.\+surface = surface}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a8d2ae8a5a6e33e77d6dbac8de11e81de}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!width@{width}}
+\index{width@{width}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a8d2ae8a5a6e33e77d6dbac8de11e81de} 
+src.\+modules.\+General.\+functions.\+Camera.\+width = width}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_aa6f564d5dbcd4d6567c81ac0366630c7}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!x@{x}}
+\index{x@{x}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_aa6f564d5dbcd4d6567c81ac0366630c7} 
+src.\+modules.\+General.\+functions.\+Camera.\+x}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a76d63c63245cd651c4e02c8e1384824f}\index{src.modules.General.functions.Camera@{src.modules.General.functions.Camera}!y@{y}}
+\index{y@{y}!src.modules.General.functions.Camera@{src.modules.General.functions.Camera}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_camera_a76d63c63245cd651c4e02c8e1384824f} 
+src.\+modules.\+General.\+functions.\+Camera.\+y = self.\+POSITION}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+General/\mbox{\hyperlink{functions_8py}{functions.\+py}}\end{DoxyCompactItemize}

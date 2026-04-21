@@ -1,0 +1,182 @@
+\doxysection{src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider}{}\label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac479c9c7082a1370612ec86486a8e4c6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a190287f1f54b0606df4fb58320a64f83}{label}}, int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}{value}}, tuple\mbox{[}int, int\mbox{]} center\+\_\+pos, float \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}=2, pygame.\+font.\+Font \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a978c6797ef91e3b0b5ffe67be314054e}{font}}=None)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a650a4223f063c1aa86553a1419b4cfe3}{handle\+\_\+event}} (self, pygame.\+Event event)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_aca93f526873792716fe10a9f6e6eb335}{try\+\_\+commit\+\_\+text}} (self)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a80ffd769a8cb665c9e4e672dedbece50}{draw}} (self, pygame.\+Surface surface)
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a6d9b948e62408d7f332b5e043e73781d}{get\+\_\+value}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a190287f1f54b0606df4fb58320a64f83}{label}} = label
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}{value}} = value
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_aba89a7a6884f9bc9bf5d35d5954028d2}{width}} = 200
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac1e2f91302d926b546d8b595d3d6dbc0}{height}} = 10
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}} = multiplier
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a8854518cf5d660188e3d218cb6a9c697}{rect}}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a0320023f738af31890364abebfe88da9}{knob\+\_\+radius}} = 8 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}
+\item 
+int \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac93ce8f390d29358eddaf35efed8fe62}{knob\+\_\+x}} = self.\+rect.\+left + (self.\+value / 100) \texorpdfstring{$\ast$}{*} self.\+rect.\+width
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a1af3f2d8b63ecfb35b1dd83e55a6d9a2}{dragging}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a1e024cf8b3411998ca9916fad00b57ba}{input\+\_\+box}} = pygame.\+Rect(self.\+rect.\+right + 20, self.\+rect.\+top -\/ 10 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}, 50 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}, 30 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}})
+\item 
+str \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_adda0a68448a69defea339db67d5f5c75}{text}} = str(\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}{value}})
+\item 
+bool \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a68b3b0586cc4b9dd6e60f12d50a57404}{active}} = False
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a63fc573f14facf9c8622803e72bb6046}{original\+\_\+value}} = str(\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}{value}})
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a978c6797ef91e3b0b5ffe67be314054e}{font}} = font if font else pygame.\+font.\+Sys\+Font("{}Arial"{}, 20, bold=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac479c9c7082a1370612ec86486a8e4c6}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac479c9c7082a1370612ec86486a8e4c6} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{label}{, }\item[{int}]{value}{, }\item[{tuple\mbox{[}int, int\mbox{]}}]{center\+\_\+pos}{, }\item[{float }]{multiplier}{ = {\ttfamily 2}, }\item[{pygame.\+font.\+Font }]{font}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a80ffd769a8cb665c9e4e672dedbece50}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!draw@{draw}}
+\index{draw@{draw}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a80ffd769a8cb665c9e4e672dedbece50} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Surface}]{surface}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a6d9b948e62408d7f332b5e043e73781d}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a6d9b948e62408d7f332b5e043e73781d} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+get\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a650a4223f063c1aa86553a1419b4cfe3}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!handle\_event@{handle\_event}}
+\index{handle\_event@{handle\_event}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{handle\_event()}{handle\_event()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a650a4223f063c1aa86553a1419b4cfe3} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+handle\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pygame.\+Event}]{event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_aca93f526873792716fe10a9f6e6eb335}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!try\_commit\_text@{try\_commit\_text}}
+\index{try\_commit\_text@{try\_commit\_text}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{try\_commit\_text()}{try\_commit\_text()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_aca93f526873792716fe10a9f6e6eb335} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+try\+\_\+commit\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a68b3b0586cc4b9dd6e60f12d50a57404}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!active@{active}}
+\index{active@{active}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a68b3b0586cc4b9dd6e60f12d50a57404} 
+bool src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+active = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a1af3f2d8b63ecfb35b1dd83e55a6d9a2}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!dragging@{dragging}}
+\index{dragging@{dragging}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{dragging}{dragging}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a1af3f2d8b63ecfb35b1dd83e55a6d9a2} 
+bool src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+dragging = False}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a978c6797ef91e3b0b5ffe67be314054e}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!font@{font}}
+\index{font@{font}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a978c6797ef91e3b0b5ffe67be314054e} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+font = font if font else pygame.\+font.\+Sys\+Font("{}Arial"{}, 20, bold=True)}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac1e2f91302d926b546d8b595d3d6dbc0}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!height@{height}}
+\index{height@{height}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac1e2f91302d926b546d8b595d3d6dbc0} 
+int src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+height = 10}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a1e024cf8b3411998ca9916fad00b57ba}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!input\_box@{input\_box}}
+\index{input\_box@{input\_box}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{input\_box}{input\_box}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a1e024cf8b3411998ca9916fad00b57ba} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+input\+\_\+box = pygame.\+Rect(self.\+rect.\+right + 20, self.\+rect.\+top -\/ 10 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}, 50 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}, 30 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a0320023f738af31890364abebfe88da9}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!knob\_radius@{knob\_radius}}
+\index{knob\_radius@{knob\_radius}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{knob\_radius}{knob\_radius}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a0320023f738af31890364abebfe88da9} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+knob\+\_\+radius = 8 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}{multiplier}}}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac93ce8f390d29358eddaf35efed8fe62}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!knob\_x@{knob\_x}}
+\index{knob\_x@{knob\_x}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{knob\_x}{knob\_x}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ac93ce8f390d29358eddaf35efed8fe62} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+knob\+\_\+x = self.\+rect.\+left + (self.\+value / 100) \texorpdfstring{$\ast$}{*} self.\+rect.\+width}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a190287f1f54b0606df4fb58320a64f83}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!label@{label}}
+\index{label@{label}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a190287f1f54b0606df4fb58320a64f83} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+label = label}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_abb22719739bdd72430128ac369792766} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+multiplier = multiplier}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a63fc573f14facf9c8622803e72bb6046}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!original\_value@{original\_value}}
+\index{original\_value@{original\_value}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{original\_value}{original\_value}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a63fc573f14facf9c8622803e72bb6046} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+original\+\_\+value = str(\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}{value}})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a8854518cf5d660188e3d218cb6a9c697}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!rect@{rect}}
+\index{rect@{rect}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_a8854518cf5d660188e3d218cb6a9c697} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+rect}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ pygame.Rect(center\_pos[0]\ -\/\ (self.width\ //\ 2)\ *\ multiplier,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ center\_pos[1]\ -\/\ (self.height\ //\ 2)\ *\ multiplier,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.width\ *\ multiplier,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.height\ *\ multiplier)}
+
+\end{DoxyCode}
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_adda0a68448a69defea339db67d5f5c75}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!text@{text}}
+\index{text@{text}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_adda0a68448a69defea339db67d5f5c75} 
+str src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+text = str(\mbox{\hyperlink{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}{value}})}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!value@{value}}
+\index{value@{value}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_ae221c3d6c21b9cca4676a9bbb40793f5} 
+src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+value = value}
+
+\Hypertarget{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_aba89a7a6884f9bc9bf5d35d5954028d2}\index{src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}!width@{width}}
+\index{width@{width}!src.modules.Menu.sound\_settings.Slider@{src.modules.Menu.sound\_settings.Slider}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_menu_1_1sound__settings_1_1_slider_aba89a7a6884f9bc9bf5d35d5954028d2} 
+int src.\+modules.\+Menu.\+sound\+\_\+settings.\+Slider.\+width = 200}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+Menu/\mbox{\hyperlink{sound__settings_8py}{sound\+\_\+settings.\+py}}\end{DoxyCompactItemize}

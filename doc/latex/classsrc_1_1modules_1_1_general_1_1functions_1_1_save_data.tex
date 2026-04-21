@@ -1,0 +1,122 @@
+\doxysection{src.\+modules.\+General.\+functions.\+Save\+Data Class Reference}
+\hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}{}\label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_afa46e01d373ed7c1ae2c13bdd04745b0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ae981c528c21903b8b52568311e2e8f46}{filename}}="{}save\+\_\+data.\+json"{})
+\item 
+dict \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a12db867e4d24ec5b37bc410935504801}{load}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ad44baf789bb97ff26f761139fe4526ca}{save}} (self)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a4348265c0b58b67cf6d9e4779e80fdf0}{set\+\_\+value}} (self, dict dict)
+\item 
+None \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a0d3c4950ba6a6584a15484dd4eb29279}{reload}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ae981c528c21903b8b52568311e2e8f46}{filename}} = filename
+\item 
+dict \mbox{\hyperlink{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ac84c8fb9c28b7d161e575458ad9f2e56}{data}} = self.\+load()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class representing save data for a game.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_afa46e01d373ed7c1ae2c13bdd04745b0}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_afa46e01d373ed7c1ae2c13bdd04745b0} 
+ None src.\+modules.\+General.\+functions.\+Save\+Data.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{filename}{ = {\ttfamily "{}save\+\_\+data.json"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a new SaveData object with the given filename.
+
+Args:
+    filename: The name of the file to store the save data in.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a12db867e4d24ec5b37bc410935504801}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!load@{load}}
+\index{load@{load}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a12db867e4d24ec5b37bc410935504801} 
+ dict src.\+modules.\+General.\+functions.\+Save\+Data.\+load (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads the data from the save file.
+
+If the file exists, it reads the file and returns the data as a dict.
+If the file does not exist, it returns an empty dict.
+
+Returns:
+    dict: The data from the save file.
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a0d3c4950ba6a6584a15484dd4eb29279}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!reload@{reload}}
+\index{reload@{reload}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a0d3c4950ba6a6584a15484dd4eb29279} 
+ None src.\+modules.\+General.\+functions.\+Save\+Data.\+reload (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reloads the data from the save file.
+
+This method is used to reload the data from the save file after the
+save file has been modified. The data of the SaveData object is
+replaced with the data loaded from the file.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ad44baf789bb97ff26f761139fe4526ca}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!save@{save}}
+\index{save@{save}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ad44baf789bb97ff26f761139fe4526ca} 
+ None src.\+modules.\+General.\+functions.\+Save\+Data.\+save (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves the data to the save file.
+
+This method writes the current data dictionary to the save file in
+JSON format, with indentation of 4 spaces.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a4348265c0b58b67cf6d9e4779e80fdf0}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!set\_value@{set\_value}}
+\index{set\_value@{set\_value}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{set\_value()}{set\_value()}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_a4348265c0b58b67cf6d9e4779e80fdf0} 
+ None src.\+modules.\+General.\+functions.\+Save\+Data.\+set\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{dict}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the current data dictionary to the given dictionary.
+
+This method is used to set the data of the SaveData object to a new dictionary.
+The given dictionary is not copied, so any changes to the dictionary after
+calling this method will affect the data of the SaveData object.
+
+Args:
+    dict (dict): The dictionary to use as the new data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ac84c8fb9c28b7d161e575458ad9f2e56}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!data@{data}}
+\index{data@{data}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ac84c8fb9c28b7d161e575458ad9f2e56} 
+dict src.\+modules.\+General.\+functions.\+Save\+Data.\+data = self.\+load()}
+
+\Hypertarget{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ae981c528c21903b8b52568311e2e8f46}\index{src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}!filename@{filename}}
+\index{filename@{filename}!src.modules.General.functions.SaveData@{src.modules.General.functions.SaveData}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classsrc_1_1modules_1_1_general_1_1functions_1_1_save_data_ae981c528c21903b8b52568311e2e8f46} 
+src.\+modules.\+General.\+functions.\+Save\+Data.\+filename = filename}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/modules/\+General/\mbox{\hyperlink{functions_8py}{functions.\+py}}\end{DoxyCompactItemize}
