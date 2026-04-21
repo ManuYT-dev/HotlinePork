@@ -54,7 +54,12 @@ Follow these steps to get the game running on your local machine:
    pip install -r requirements.txt
    ```
 
-4. **Launch the Game**
+4. **Navigate to the Source Directory**
+   ```bash
+   cd src
+   ```
+
+5. **Launch the Game**
    Start the game by running the main script:
    ```bash
    python main.py
